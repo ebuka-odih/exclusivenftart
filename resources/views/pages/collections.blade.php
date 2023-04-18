@@ -7,7 +7,7 @@
                 <div class="col-6">
                     <div class="page-title-content">
                         <h3>Marketplace</h3>
-                        <p class="mb-2">Exclusivenftart Collections</p>
+                        <p class="mb-2">ExclusiveNFTart Collections</p>
                     </div>
                 </div>
             </div>
