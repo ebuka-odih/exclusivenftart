@@ -28,7 +28,7 @@
                 /*max-height: 120px;*/
             }
             .big-logo {
-                height: 80px;
+                height: 60px;
             }
         }
     </style>
