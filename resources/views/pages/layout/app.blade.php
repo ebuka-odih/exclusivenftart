@@ -24,7 +24,7 @@
         @media only screen and (max-width: 600px) {
             .logo-primary {
                 width: 80px;
-                height: 40px;
+                height: 60px;
                 /*max-height: 120px;*/
             }
             .big-logo {
