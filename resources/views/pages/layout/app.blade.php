@@ -23,8 +23,8 @@
         }
         @media only screen and (max-width: 600px) {
             .logo-primary {
-                width: 120px;
-                height: 80px;
+                width: 100px;
+                height: 60px;
             }
         }
     </style>
