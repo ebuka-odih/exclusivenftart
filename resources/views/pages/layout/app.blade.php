@@ -25,6 +25,7 @@
             .logo-primary {
                 width: 80px;
                 height: 40px;
+                max-height: 120px;
             }
         }
     </style>
