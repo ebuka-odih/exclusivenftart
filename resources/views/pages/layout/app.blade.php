@@ -25,7 +25,10 @@
             .logo-primary {
                 width: 80px;
                 height: 40px;
-                max-height: 120px;
+                /*max-height: 120px;*/
+            }
+            .big-logo {
+                height: 80px;
             }
         }
     </style>
@@ -44,7 +47,7 @@
                     <div class="navigation">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <div class="brand-logo">
-                                <a href="{{ route('index') }}">
+                                <a href="{{ route('index') }}" class="big-logo">
                                     <img style="margin-bottom: -20px; margin-top: -20px" height="80" width="200" src="{{ asset('img/logo.png') }}" alt="" class="logo-primary">
 {{--                                    <h3 class="text-white">ExclusiveNFTart</h3>--}}
 {{--                                    <img src="images/logow.png" alt="" class="logo-white">--}}
