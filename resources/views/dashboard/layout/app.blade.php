@@ -27,7 +27,7 @@
                 <div class="nk-sidebar-brand">
                     <a href="{{ route('user.dashboard') }}" class="logo-link nk-sidebar-logo">
 {{--                        <h3>Exclusivenftart</h3>--}}
-                        <img width="250" src="{{ asset('img/logo2.png') }}" alt="">
+                        <img width="150" src="{{ asset('img/logo2.png') }}" alt="">
 {{--                        <span class="nio-version">Crypto</span>--}}
                     </a>
                 </div>
