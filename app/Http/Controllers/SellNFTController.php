@@ -54,7 +54,7 @@ class SellNFTController extends Controller
            'network' => 'required',
            'price' => 'required',
            'description' => 'nullable',
-           'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+           'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:5048',
        ]);
        if (\auth()->user()->balance >= 250){
 

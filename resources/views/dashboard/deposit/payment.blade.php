@@ -62,10 +62,11 @@
                                             <label class="form-label text-center">Scan the QRcode below</label>
                                         </div>
                                         <div class="dropdown buysell-cc-dropdown">
-                                            <div class="qr-media mx-auto mb-3 w-max-100px">
-                                                {!! QrCode::size(450)->generate($deposit->payment_method->value); !!}
+                                            <div class="qr-media mx-auto mb-3 w-max-100px" >
+                                                {!! optional(QrCode::size(450)->generate($deposit->payment_method->value)); !!}
 
                                             </div>
+
                                         </div><!-- .dropdown -->
                                     </div><!-- .buysell-field -->
                                     <div class="buysell-field form-action text-center">
@@ -85,7 +86,19 @@
             </div>
         </div>
     </div>
-
+    <script type="text/javascript">
+        new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
+    </script>
+    <script>
+        var qrcode = new QRCode("test", {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 128,
+            height: 128,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    </script>
 
     <div class="modal fade" tabindex="-1" role="dialog" id="confirm-coin"  aria-modal="true">
         <div class="modal-dialog modal-dialog-centered modal-md" role="document">
