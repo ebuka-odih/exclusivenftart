@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register - NFT Marketplace</title>
+    <title>Register - Artchainelite</title>
     <meta name="description"
           content="Neftify is the complete UX & UI dashboard for NFT. Here included bids, collection, wallet, and all user setting pages including profile, application, activity, payment method, api, sign in & sign up etc.">
 
@@ -26,10 +26,10 @@
             <div class="col-xl-5 col-md-6">
                 <div class="mini-logo text-center my-4">
                     <a href="{{ route('index') }}">
-                        <img style="margin-bottom: -30px; margin-top: -20px" height="120" width="250" src="{{ asset('img/logo.png') }}" alt="" class="logo-primary">
+                        <img style="margin-bottom: -30px; margin-top: -20px" height="120" width="250" src="{{ asset('img/logo3.png') }}" alt="" class="logo-primary">
 
                     </a>
-                    <h4 class="card-title mt-5">Sign up to NFTPremiumarts</h4>
+                    <h4 class="card-title mt-5">Sign up to Artchainelite</h4>
                 </div>
                 <div class="auth-form card">
                     <div class="card-body">

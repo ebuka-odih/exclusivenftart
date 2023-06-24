@@ -98,7 +98,7 @@
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8">
                     <div class="bottom-logo">
-                        <img height="120" width="120" src="img2/logo.png" alt="" class="logo-primary">
+                        <img height="120" width="120" src="{{ asset('img2/logo.png') }}" alt="" class="logo-primary">
 
                         {{--                    <img class="pb-3" src="images/logoh.png" alt="">--}}
 {{--                        <h3 class="pb-3 text-white">Artchainelite</h3>--}}
