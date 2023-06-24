@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ArtexclusiveNFT - NFT Marketplace</title>
+    <title>Artchainelite - NFT Marketplace</title>
     <meta name="description"
-          content="ArtexclusiveNFT is NFT. Here included bids, collection, wallet, and all user setting pages including profile, application, activity, payment method, api, sign in & sign up etc.">
+          content="Artchainelite is NFT. Here included bids, collection, wallet, and all user setting pages including profile, application, activity, payment method, api, sign in & sign up etc.">
 
 
     <!-- Favicon icon -->
@@ -49,7 +49,7 @@
                             <div class="brand-logo">
                                 <a href="{{ route('index') }}" class="big-logo">
                                     <img style="margin-bottom: -20px; margin-top: -20px" height="80" width="200" src="{{ asset('img/logo2.png') }}" alt="" class="logo-primary">
-{{--                                    <h3 class="text-white">ArtexclusiveNFT</h3>--}}
+{{--                                    <h3 class="text-white">Artchainelite</h3>--}}
 {{--                                    <img src="images/logow.png" alt="" class="logo-white">--}}
                                 </a>
                             </div>
@@ -101,7 +101,7 @@
                         <img height="120" width="120" src="img2/logo.png" alt="" class="logo-primary">
 
                         {{--                    <img class="pb-3" src="images/logoh.png" alt="">--}}
-{{--                        <h3 class="pb-3 text-white">ArtexclusiveNFT</h3>--}}
+{{--                        <h3 class="pb-3 text-white">Artchainelite</h3>--}}
                         <p class="text-white">We have professional market insight
                             We flip, collect and invest in NFT projects.</p>
                     </div>
@@ -150,7 +150,7 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="copyright">
-                        <p class="text-white">© Copyright 2022 <a href="#" class="text-white">ArtexclusiveNFT</a> <!-- -->All Rights Reserved</p>
+                        <p class="text-white">© Copyright 2022 <a href="#" class="text-white">Artchainelite</a> <!-- -->All Rights Reserved</p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">

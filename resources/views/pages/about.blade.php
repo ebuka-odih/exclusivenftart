@@ -21,10 +21,10 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <h2 class="mb-3">Collect, Invest & Earn
-                                        Wonderful NFTs at ArtexclusiveNFT </h2>
+                                        Wonderful NFTs at Artchainelite </h2>
 
                                     <p style="font-size: 20px" class="mb-3">
-                                        ArtexclusiveNFT is an extension company that collect, trade and flip NFTs with great returns
+                                        Artchainelite is an extension company that collect, trade and flip NFTs with great returns
                                         we help investors with interest in NFT to pick from the best NFT projects
                                         With the help of many of our professional analyst with in-depth NFT market knowledge,
                                     </p>
@@ -33,14 +33,14 @@
                                     </p>
                                     <h4>Building an open digital economy</h4>
                                     <p style="font-size: 20px" class="mb-3">
-                                        ArtexclusiveNFT is a decentralized marketplace where users can generate, store, buy & sell NFTs (non-fungible tokens).
+                                        Artchainelite is a decentralized marketplace where users can generate, store, buy & sell NFTs (non-fungible tokens).
                                     </p>
                                     <p style="font-size: 20px" class="mb-3">
                                         Opennnest Marketplace connects and collaborates with Strategic Partners globally.
                                     </p>
 
                                 </div>
-                                <div class="col-md-6"><img height="400" width="400" src="{{ asset('img2/ArtexclusiveNFT.png') }}" class="img-fluid rounded" alt="..."></div>
+                                <div class="col-md-6"><img height="400" width="400" src="{{ asset('img2/Artchainelite.png') }}" class="img-fluid rounded" alt="..."></div>
 
                             </div>
                         </div>
@@ -60,14 +60,14 @@
                                     </h2>
 
                                     <p style="font-size: 20px" class="mb-3">
-                                        ArtexclusiveNFT provides a safe, reliable, and stable environment for crypto trading via web and mobile apps.
+                                        Artchainelite provides a safe, reliable, and stable environment for crypto trading via web and mobile apps.
 
                                     </p>
                                     <p style="font-size: 20px" class="mb-3">
                                         We adopt global server load balancing, distributed clusters, other technologies for your protection. Our products and services are always tailored to your needs and suggestions.
 
                                     </p>
-                                    <h2 class="mb-2 mt-2">ArtexclusiveNFT adopts blockchain to build he next-gen
+                                    <h2 class="mb-2 mt-2">Artchainelite adopts blockchain to build he next-gen
                                         financial ecosystem.</h2>
                                     <p class="fs-20px">
                                         We strive to eliminate financial barriers, evolve the global economy, and change the world for better. We never stop to innovate and improve our user experience to make cryptocurrency trading and investing available for everyone.

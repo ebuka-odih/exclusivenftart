@@ -193,7 +193,7 @@
             <div class="col-xl-8">
                 <div class="section-title text-center">
                     <h2>Top collections over <span class="text-primary">last 7 days</span></h2>
-                    <p>Here are a few reasons why you should choose ArtexclusiveNFT</p>
+                    <p>Here are a few reasons why you should choose Artchainelite</p>
                 </div>
             </div>
         </div>
@@ -582,13 +582,13 @@
                                 <div class="col-md-6"><img  height="400" width="400" src="{{ asset('img/logo.png') }}" class="img-fluid rounded" alt="..."></div>
 
                                 <div class="col-md-6">
-                                    <h2 class="mb-3">What is ArtexclusiveNFT ?</h2>
+                                    <h2 class="mb-3">What is Artchainelite ?</h2>
                                     <p style="font-size: 20px" class="mb-3">
-                                        ArtexclusiveNFT is a decentralized marketplace where users can generate, store, buy & sell NFTs (non-fungible tokens).
+                                        Artchainelite is a decentralized marketplace where users can generate, store, buy & sell NFTs (non-fungible tokens).
                                     </p>
 
                                     <p style="font-size: 20px" class="mb-3">
-                                        ArtexclusiveNFT Marketplace connects and collaborates with Strategic Partners globally.
+                                        Artchainelite Marketplace connects and collaborates with Strategic Partners globally.
                                     </p>
                                     <a href="{{ route('about') }}" class="text-center">Read More <i class="bi bi-arrow-right-short"></i></a>
                                 </div>
@@ -609,7 +609,7 @@
             <div class="col-xl-8">
                 <div class="section-title text-center">
                     <h2>Create and sell your NFTs</h2>
-                    <p>Here are a few reasons why you should choose ArtexclusiveNFT</p>
+                    <p>Here are a few reasons why you should choose Artchainelite</p>
                 </div>
             </div>
         </div>
@@ -619,7 +619,7 @@
                     <div class="create-sell-content-icon"><i class="bi bi-shield-check"></i></div>
                     <div>
                         <h4>Set up your wallet </h4>
-                        <p>Once you’ve set up your wallet of choice, connect it to ArtexclusiveNFT by clicking the wallet
+                        <p>Once you’ve set up your wallet of choice, connect it to Artchainelite by clicking the wallet
                             icon in the top right corner. Learn about the wallets we support.</p>
 
                     </div>
@@ -665,7 +665,7 @@
                 <div class="col-xl-8">
                     <div class="section-title text-center">
                         <h2>Browse by category</h2>
-                        <p>Here are a few reasons why you should choose ArtexclusiveNFT</p>
+                        <p>Here are a few reasons why you should choose Artchainelite</p>
                     </div>
                 </div>
             </div>

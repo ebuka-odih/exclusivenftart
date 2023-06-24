@@ -52,7 +52,7 @@
                             <div class="d-flex justify-content-between">
                                 <div class="text-start">
                                     <p class="mb-2">Email</p>
-                                    <h5 class="text-muted"><a href="mailto:support@ArtexclusiveNFT.com">support@ArtexclusiveNFT.com</a></h5>
+                                    <h5 class="text-muted"><a href="mailto:support@artchainelite.com">support@artchainelite.com</a></h5>
                                 </div>
 
                             </div>

@@ -7,7 +7,7 @@
                 <div class="col-6">
                     <div class="page-title-content">
                         <h3>Marketplace</h3>
-                        <p class="mb-2">ArtexclusiveNFT Marketplace</p>
+                        <p class="mb-2">Artchainelite Marketplace</p>
                     </div>
                 </div>
             </div>

@@ -5,13 +5,13 @@
 <head>
 {{--    <base href="../../">--}}
     <meta charset="utf-8">
-    <meta name="author" content="Exclusivenftart">
+    <meta name="author" content="Artchainelite">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>Dashboard | Exclusivenftart</title>
+    <title>Dashboard | Artchainelite</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('assets/css/dashlite.css?ver=2.4.0') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('assets/css/theme.css?ver=2.4.0') }}">
@@ -26,7 +26,7 @@
             <div class="nk-sidebar-element nk-sidebar-head">
                 <div class="nk-sidebar-brand">
                     <a href="{{ route('user.dashboard') }}" class="logo-link nk-sidebar-logo">
-{{--                        <h3>Exclusivenftart</h3>--}}
+{{--                        <h3>Artchainelite</h3>--}}
                         <img width="150" src="{{ asset('img/logo2.png') }}" alt="">
 {{--                        <span class="nio-version">Crypto</span>--}}
                     </a>
@@ -312,7 +312,7 @@
             <div class="nk-footer nk-footer-fluid">
                 <div class="container-fluid">
                     <div class="nk-footer-wrap">
-                        <div class="nk-footer-copyright"> &copy; 2023 <a href="Exclusivenftart.io">Exclusivenftart.io</a>
+                        <div class="nk-footer-copyright"> &copy; 2023 <a href="Artchainelite.io">Artchainelite.io</a>
                         </div>
 {{--                        <div class="nk-footer-links">--}}
 {{--                            <ul class="nav nav-sm">--}}
