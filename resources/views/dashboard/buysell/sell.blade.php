@@ -1,7 +1,7 @@
 @extends('dashboard.layout.app')
 @section('content')
 
-    <br><br><br>
+    <br><br><br><br><br>
     <div class="nk-content nk-content-fluid mt-5">
         <div class="container-xl wide-lg">
             <div class="nk-content-body">
