@@ -42,7 +42,7 @@
                                             <div class="nk-wg7-stats-group">
                                                 <div class="nk-wg7-stats w-50">
                                                     <div class="nk-wg7-title">GAS FEE</div>
-                                                    <div class="number-lg">0.20 <span>ETH</span></div>
+                                                    <div class="number-lg">0.15 <span>ETH</span></div>
                                                 </div>
                                             </div>
                                         </div><!-- .nk-wg7 -->
