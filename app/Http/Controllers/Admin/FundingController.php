@@ -25,7 +25,7 @@ class FundingController extends Controller
         $user = User::findOrFail($data->user_id);
         $user->balance += $request->amount;
         $user->save();
-        Mail::to($data->user->email)->send(new FundingMail($data));
+        Mail::to($user->email)->send(new FundingMail($data));
         return redirect()->back()->with('success', "Fund sent successfully");
     }
 
