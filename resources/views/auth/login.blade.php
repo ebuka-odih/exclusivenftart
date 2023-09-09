@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login - Artchainelite</title>
+    <title>Login - {{ env('APP_NAME') }}</title>
     <meta name="description"
           content="Neftify is the complete UX & UI dashboard for NFT. Here included bids, collection, wallet, and all user setting pages including profile, application, activity, payment method, api, sign in & sign up etc.">
 
@@ -27,7 +27,7 @@
                         <img style="margin-bottom: -30px; margin-top: -20px" height="100" width="250" src="{{ asset('img/logo3.png') }}" alt="" class="logo-primary">
 {{--                        <h2>Artchainelite</h2>--}}
                     </a>
-                    <h4 class="card-title mt-5">Sign in to Artchainelite</h4>
+                    <h4 class="card-title mt-5">Sign in to {{ env('APP_NAME') }}</h4>
                 </div>
                 <div class="auth-form card">
                     <div class="card-body">
