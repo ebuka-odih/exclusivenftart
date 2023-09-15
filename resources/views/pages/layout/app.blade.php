@@ -7,7 +7,7 @@
     </script>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VNGW0L02WX"></script>
     <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MP28VHC"></script>
-    <script async="" src="{{ asset('front/js/analytics.js') }}"></script>
+    <script async="" src="{{ asset('client/js/analytics.js') }}"></script>
     <meta name="viewport" content="width=device-width" />
     <meta charSet="utf-8" />
     <title>{{ env('APP_NAME') }} | Create, Buy, Sell, Swap and Farm NFTs</title>
@@ -28,7 +28,7 @@
     <link rel="preload" href="https://cdn.nftrade.com/2023-07-06-b0ec5239/_next/static/css/556ad39d2424ddf70a88.css" as="style" />
     <link rel="stylesheet" href="https://cdn.nftrade.com/2023-07-06-b0ec5239/_next/static/css/556ad39d2424ddf70a88.css" data-n-p="" />
     <noscript data-n-css=""></noscript>
-    <link rel="preload" href="https://cdn.nftrade.com/2023-07-06-b0ec5239/_next/static/chunks/main-7c76004ca4a4ef6c9a19.js" as="script" />
+    <link rel="preload" href="{{ asset('client/js/main-7c76004ca4a4ef6c9a19.js') }}" as="script" />
     <link rel="preload" href="https://cdn.nftrade.com/2023-07-06-b0ec5239/_next/static/chunks/webpack-4f0e6c8aa58f6775a182.js" as="script" />
     <link rel="preload" href="https://cdn.nftrade.com/2023-07-06-b0ec5239/_next/static/chunks/framework.150a78e274d790fe204f.js" as="script" />
     <link rel="preload" href="https://cdn.nftrade.com/2023-07-06-b0ec5239/_next/static/chunks/a00da3a2.62241b263e3d939dfb14.js" as="script" />
