@@ -10,15 +10,15 @@
     <script async="" src="{{ asset('front/js/analytics.js') }}"></script>
     <meta name="viewport" content="width=device-width" />
     <meta charSet="utf-8" />
-    <title>NFTrade | Create, Buy, Sell, Swap and Farm NFTs</title>
-    <meta property="og:title" content="NFTrade | Create, Buy, Sell, Swap and Farm NFTs" />
-    <meta property="og:description" content="NFTrade is a multi-chain and cross-chain platform for NFT creation and trading. Seamlessly launch, mint, and swap non-fungible tokens. Earn digital collectibles. NFTrade places you at the heart of the NFT economy." />
-    <meta name="description" content="NFTrade is a multi-chain and cross-chain platform for NFT creation and trading. Seamlessly launch, mint, and swap non-fungible tokens. Earn digital collectibles. NFTrade places you at the heart of the NFT economy." />
+    <title>{{ env('APP_NAME') }} | Create, Buy, Sell, Swap and Farm NFTs</title>
+    <meta property="og:title" content="{{ env('APP_NAME') }} | Create, Buy, Sell, Swap and Farm NFTs" />
+    <meta property="og:description" content="{{ env('APP_NAME') }} is a multi-chain and cross-chain platform for NFT creation and trading. Seamlessly launch, mint, and swap non-fungible tokens. Earn digital collectibles. {{ env('APP_NAME') }} places you at the heart of the NFT economy." />
+    <meta name="description" content="{{ env('APP_NAME') }} is a multi-chain and cross-chain platform for NFT creation and trading. Seamlessly launch, mint, and swap non-fungible tokens. Earn digital collectibles. {{ env('APP_NAME') }} places you at the heart of the NFT economy." />
     <meta property="og:image" content="https://cdn.nftrade.com/marketplace-preview-2.png" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@NFTradeOfficial" />
-    <meta name="twitter:title" content="NFTrade | Create, Buy, Sell, Swap and Farm NFTs" />
-    <meta name="twitter:description" content="NFTrade is a multi-chain and cross-chain platform for NFT creation and trading. Seamlessly launch, mint, and swap non-fungible tokens. Earn digital collectibles. NFTrade places you at the heart of the NFT economy." />
+    <meta name="twitter:title" content="{{ env('APP_NAME') }} | Create, Buy, Sell, Swap and Farm NFTs" />
+    <meta name="twitter:description" content="{{ env('APP_NAME') }} is a multi-chain and cross-chain platform for NFT creation and trading. Seamlessly launch, mint, and swap non-fungible tokens. Earn digital collectibles. {{ env('APP_NAME') }} places you at the heart of the NFT economy." />
     <meta name="twitter:image" content="https://cdn.nftrade.com/marketplace-preview-2.png" />
     <meta name="next-head-count" content="12" />
     <link rel="preload" href="https://cdn.nftrade.com/2023-07-06-b0ec5239/_next/static/css/0795fcc4270ed1ee5725.css" as="style" />
@@ -56,8 +56,9 @@
 <div id="__next">
     <div class="Layout_layout__3ANrY">
         <div class="Header_Header__e7u09">
-            <a class="Clickable_clickable__1ZTaR" style="display:flex" href="index.html">
-                <img class="Logo_logo__Y3zkh Header_HeaderLogo__eX5Rd" src="{{ asset('clent/img/logo/logoAnimation.svg') }}" alt="NFTrade Logo" />
+            <a class="Clickable_clickable__1ZTaR" style="display:flex" href="{{ route('index') }}">
+                <h3 style="color: black; font-weight: bolder">{{ env('APP_NAME') }}</h3>
+{{--                <img class="Logo_logo__Y3zkh Header_HeaderLogo__eX5Rd" src="{{ asset('client/img/logo/logoAnimation.svg') }}" alt="{{ env('APP_NAME') }} Logo" />--}}
             </a>
             <div class="Header_HeaderNetworkEmpty__1lI6F"></div>
             <div class="Header_HeaderSearchItems__3xPGd">
@@ -189,49 +190,49 @@
                                     <a class="Clickable_clickable__1ZTaR" href="marketplace2eba.html?chains=137_evm">
                                         <div>
                                             <div style="display:flex">
-                                                <img src="img/chains/walletMatic.svg" alt="Polygon" />
+                                                <img src="{{ asset('client/img/chains/walletMatic.svg') }}" alt="Polygon" />
                                             </div>
                                         </div>
                                     </a>
                                     <a class="Clickable_clickable__1ZTaR" href="marketplace06cd.html?chains=43114_evm">
                                         <div>
                                             <div style="display:flex">
-                                                <img src="img/chains/walletAvax.svg" alt="Avalanche" />
+                                                <img src="{{ asset('client/img/chains/walletAvax.svg') }}" alt="Avalanche" />
                                             </div>
                                         </div>
                                     </a>
                                     <a class="Clickable_clickable__1ZTaR" href="marketplacebaad.html?chains=1_immutablex">
                                         <div>
                                             <div style="display:flex">
-                                                <img src="img/chains/walletImxx.png" alt="ImmutableX" />
+                                                <img src="{{ asset('client/img/chains/walletImxx.png') }}" alt="ImmutableX" />
                                             </div>
                                         </div>
                                     </a>
                                     <a class="Clickable_clickable__1ZTaR" href="marketplace3b5e.html?chains=1284_evm">
                                         <div>
                                             <div style="display:flex">
-                                                <img src="img/chains/walletGlmr.svg" alt="Moonbeam" />
+                                                <img src="{{ asset('client/img/chains/walletGlmr.svg') }}" alt="Moonbeam" />
                                             </div>
                                         </div>
                                     </a>
                                     <a class="Clickable_clickable__1ZTaR" href="marketplace872c.html?chains=1564830818_evm">
                                         <div>
                                             <div style="display:flex">
-                                                <img src="img/chains/walletSkale.svg" alt="SKALE" />
+                                                <img src="{{ asset('client/img/chains/walletSkale.svg') }}" alt="SKALE" />
                                             </div>
                                         </div>
                                     </a>
                                     <a class="Clickable_clickable__1ZTaR" href="marketplaceba65.html?chains=xrplmainnet_xrpl">
                                         <div>
                                             <div style="display:flex">
-                                                <img src="img/chains/walletXrpl.svg" alt="XRPL" />
+                                                <img src="{{ asset('client/img/chains/walletXrpl.svg') }}" alt="XRPL" />
                                             </div>
                                         </div>
                                     </a>
                                     <a class="Clickable_clickable__1ZTaR" href="marketplaceb139.html?chains=11297108109_evm">
                                         <div>
                                             <div style="display:flex">
-                                                <img src="img/chains/walletPalm.svg" alt="Palm" />
+                                                <img src="{{ asset('client/img/chains/walletPalm.svg') }}" alt="Palm" />
                                             </div>
                                         </div>
                                     </a>
@@ -557,7 +558,7 @@
                                                 <div class="home_CollectionCard2ProfileImg__1bGid">
                                                     <img src="https://image.nftrade.com/uploads/7c94a24ea60afded57cf0152dfdb9b531677842409779.webp" alt="Brick by Brick" />
                                                     <div class="home_CollectionCard2ProfileImgChain__2LNDr">
-                                                        <img src="img/chains/walletBNB.svg" alt="BNB" />
+                                                        <img src="{{ asset('client/img/chains/walletBNB.svg') }}" alt="BNB" />
                                                     </div>
                                                 </div>
                                                 <div class="home_CollectionCard2ProfileInner__11sds">
@@ -589,7 +590,7 @@
                                                     <div class="home_CollectionCard2ProfileStatsFloorValue__6EImM">
                                                         <div>
                                                             <div style="display:flex">
-                                                                <img src="img/chains/currencyBnb.svg" alt="BNB" />
+                                                                <img src="{{ asset('client/img/chains/currencyBnb.svg') }}" alt="BNB" />
                                                             </div>
                                                         </div>
                                                         <div class="Text_Text__3hFx0 Text_Text7__1TYrf Text_Text700__3bb9l Text_TextmainBlack__25vmd Text_TextTruncate__2KxqQ">2.2</div>
@@ -605,7 +606,7 @@
                                                 <div class="home_CollectionCard2ProfileImg__1bGid">
                                                     <img src="https://images.nftrade.com/uploads/e28f44284cab380cbff589a14c8a8a451662026220099.webp" alt="Castle Crush" />
                                                     <div class="home_CollectionCard2ProfileImgChain__2LNDr">
-                                                        <img src="img/chains/walletAvax.svg" alt="Avalanche" />
+                                                        <img src="{{ asset('client/img/chains/walletAvax.svg') }}" alt="Avalanche" />
                                                     </div>
                                                 </div>
                                                 <div class="home_CollectionCard2ProfileInner__11sds">
@@ -637,7 +638,7 @@
                                                     <div class="home_CollectionCard2ProfileStatsFloorValue__6EImM">
                                                         <div>
                                                             <div style="display:flex">
-                                                                <img src="img/chains/currencyAvax.svg" alt="AVAX" />
+                                                                <img src="{{ asset('client/img/chains/currencyAvax.svg') }}" alt="AVAX" />
                                                             </div>
                                                         </div>
                                                         <div class="Text_Text__3hFx0 Text_Text7__1TYrf Text_Text700__3bb9l Text_TextmainBlack__25vmd Text_TextTruncate__2KxqQ">0.1</div>
@@ -653,7 +654,7 @@
                                                 <div class="home_CollectionCard2ProfileImg__1bGid">
                                                     <img src="https://image.nftrade.com/uploads/ad24fb5daa9b21185bb08a8147a79da01664899562306.webp" alt="ZombieNFT" />
                                                     <div class="home_CollectionCard2ProfileImgChain__2LNDr">
-                                                        <img src="img/chains/walletBNB.svg" alt="BNB" />
+                                                        <img src="{{ asset('client/img/chains/walletBNB.svg') }}" alt="BNB" />
                                                     </div>
                                                 </div>
                                                 <div class="home_CollectionCard2ProfileInner__11sds">
@@ -685,7 +686,7 @@
                                                     <div class="home_CollectionCard2ProfileStatsFloorValue__6EImM">
                                                         <div>
                                                             <div style="display:flex">
-                                                                <img src="img/chains/currencyBnb.svg" alt="BNB" />
+                                                                <img src="{{ asset('client/img/chains/currencyBnb.svg') }}" alt="BNB" />
                                                             </div>
                                                         </div>
                                                         <div class="Text_Text__3hFx0 Text_Text7__1TYrf Text_Text700__3bb9l Text_TextmainBlack__25vmd Text_TextTruncate__2KxqQ">0.14</div>
@@ -701,7 +702,7 @@
                                                 <div class="home_CollectionCard2ProfileImg__1bGid">
                                                     <img src="https://images.nftrade.com/uploads/2ab9e2a69c688d8e5ba55056fd4fa3ff1662281713499.webp" alt="Tiny Dragon" />
                                                     <div class="home_CollectionCard2ProfileImgChain__2LNDr">
-                                                        <img src="img/chains/walletAvax.svg" alt="Avalanche" />
+                                                        <img src="{{ asset('client/img/chains/walletAvax.svg') }}" alt="Avalanche" />
                                                     </div>
                                                 </div>
                                                 <div class="home_CollectionCard2ProfileInner__11sds">
@@ -733,7 +734,7 @@
                                                     <div class="home_CollectionCard2ProfileStatsFloorValue__6EImM">
                                                         <div>
                                                             <div style="display:flex">
-                                                                <img src="img/chains/currencyAvax.svg" alt="AVAX" />
+                                                                <img src="{{ asset('client/img/chains/currencyAvax.svg') }}" alt="AVAX" />
                                                             </div>
                                                         </div>
                                                         <div class="Text_Text__3hFx0 Text_Text7__1TYrf Text_Text700__3bb9l Text_TextmainBlack__25vmd Text_TextTruncate__2KxqQ">2</div>
@@ -747,9 +748,9 @@
                                             <div class="home_CollectionCard2Profile__1XRBT">
                                                 <div class="Text_Text__3hFx0 Text_Text7__1TYrf Text_Text700__3bb9l Text_TextmainBlack__25vmd">5</div>
                                                 <div class="home_CollectionCard2ProfileImg__1bGid">
-                                                    <img src="img/placeholders/missingImg.svg" alt="BBB Wish Builders" />
+                                                    <img src="{{ asset('client/img/placeholders/missingImg.svg') }}" alt="BBB Wish Builders" />
                                                     <div class="home_CollectionCard2ProfileImgChain__2LNDr">
-                                                        <img src="img/chains/walletBNB.svg" alt="BNB" />
+                                                        <img src="{{ asset('client/img/chains/walletBNB.svg') }}" alt="BNB" />
                                                     </div>
                                                 </div>
                                                 <div class="home_CollectionCard2ProfileInner__11sds">
@@ -771,7 +772,7 @@
                                                     <div class="home_CollectionCard2ProfileStatsFloorValue__6EImM">
                                                         <div>
                                                             <div style="display:flex">
-                                                                <img src="img/chains/currencyBnb.svg" alt="BNB" />
+                                                                <img src="{{ asset('client/img/chains/currencyBnb.svg') }}" alt="BNB" />
                                                             </div>
                                                         </div>
                                                         <div class="Text_Text__3hFx0 Text_Text7__1TYrf Text_Text700__3bb9l Text_TextmainBlack__25vmd Text_TextTruncate__2KxqQ">N/A</div>
@@ -787,7 +788,7 @@
                                                 <div class="home_CollectionCard2ProfileImg__1bGid">
                                                     <img src="https://images.nftrade.com/uploads/aaf4badfddaf8cc49be4048f5881298d1663589929194.webp" alt="Infinity Yacht Club" />
                                                     <div class="home_CollectionCard2ProfileImgChain__2LNDr">
-                                                        <img src="img/chains/walletBNB.svg" alt="BNB" />
+                                                        <img src="{{ asset('client/img/chains/walletBNB.svg') }}" alt="BNB" />
                                                     </div>
                                                 </div>
                                                 <div class="home_CollectionCard2ProfileInner__11sds">
@@ -819,7 +820,7 @@
                                                     <div class="home_CollectionCard2ProfileStatsFloorValue__6EImM">
                                                         <div>
                                                             <div style="display:flex">
-                                                                <img src="img/chains/currencyBnb.svg" alt="BNB" />
+                                                                <img src="{{ asset('client/img/chains/currencyBnb.svg') }}" alt="BNB" />
                                                             </div>
                                                         </div>
                                                         <div class="Text_Text__3hFx0 Text_Text7__1TYrf Text_Text700__3bb9l Text_TextmainBlack__25vmd Text_TextTruncate__2KxqQ">1.99</div>
@@ -835,7 +836,7 @@
                                                 <div class="home_CollectionCard2ProfileImg__1bGid">
                                                     <img src="https://image.nftrade.com/uploads/0829705895cb601eb146a9fdc10f4d6b1691419149322.webp" alt="Reality NFT" />
                                                     <div class="home_CollectionCard2ProfileImgChain__2LNDr">
-                                                        <img src="img/chains/walletMatic.svg" alt="Polygon" />
+                                                        <img src="{{ asset('client/img/chains/walletMatic.svg') }}" alt="Polygon" />
                                                     </div>
                                                 </div>
                                                 <div class="home_CollectionCard2ProfileInner__11sds">
@@ -867,7 +868,7 @@
                                                     <div class="home_CollectionCard2ProfileStatsFloorValue__6EImM">
                                                         <div>
                                                             <div style="display:flex">
-                                                                <img src="img/chains/currencyPolygon.svg" alt="MATIC" />
+                                                                <img src="{{ asset('client/img/chains/currencyPolygon.svg') }}" alt="MATIC" />
                                                             </div>
                                                         </div>
                                                         <div class="Text_Text__3hFx0 Text_Text7__1TYrf Text_Text700__3bb9l Text_TextmainBlack__25vmd Text_TextTruncate__2KxqQ">9.8</div>
@@ -883,7 +884,7 @@
                                                 <div class="home_CollectionCard2ProfileImg__1bGid">
                                                     <img src="https://image.nftrade.com/uploads/86c0dbe35d4982a6fe7d5a1ce7bd97511665066478540.webp" alt="HatchyPocket Gen2" />
                                                     <div class="home_CollectionCard2ProfileImgChain__2LNDr">
-                                                        <img src="img/chains/walletAvax.svg" alt="Avalanche" />
+                                                        <img src="{{ asset('client/img/chains/walletAvax.svg') }}" alt="Avalanche" />
                                                     </div>
                                                 </div>
                                                 <div class="home_CollectionCard2ProfileInner__11sds">
@@ -915,7 +916,7 @@
                                                     <div class="home_CollectionCard2ProfileStatsFloorValue__6EImM">
                                                         <div>
                                                             <div style="display:flex">
-                                                                <img src="img/chains/currencyAvax.svg" alt="AVAX" />
+                                                                <img src="{{ asset('client/img/chains/currencyAvax.svg') }}" alt="AVAX" />
                                                             </div>
                                                         </div>
                                                         <div class="Text_Text__3hFx0 Text_Text7__1TYrf Text_Text700__3bb9l Text_TextmainBlack__25vmd Text_TextTruncate__2KxqQ">0.1895</div>
@@ -931,7 +932,7 @@
                                                 <div class="home_CollectionCard2ProfileImg__1bGid">
                                                     <img src="https://image.nftrade.com/uploads/c882582599feac4ce4de9a54bb327e431689852328827.webp" alt="Playbux Early Bird Quest" />
                                                     <div class="home_CollectionCard2ProfileImgChain__2LNDr">
-                                                        <img src="img/chains/walletBNB.svg" alt="BNB" />
+                                                        <img src="{{ asset('client/img/chains/walletBNB.svg') }}" alt="BNB" />
                                                     </div>
                                                 </div>
                                                 <div class="home_CollectionCard2ProfileInner__11sds">
@@ -963,7 +964,7 @@
                                                     <div class="home_CollectionCard2ProfileStatsFloorValue__6EImM">
                                                         <div>
                                                             <div style="display:flex">
-                                                                <img src="img/chains/currencyBnb.svg" alt="BNB" />
+                                                                <img src="{{ asset('client/img/chains/currencyBnb.svg') }}" alt="BNB" />
                                                             </div>
                                                         </div>
                                                         <div class="Text_Text__3hFx0 Text_Text7__1TYrf Text_Text700__3bb9l Text_TextmainBlack__25vmd Text_TextTruncate__2KxqQ">0.005</div>
@@ -1061,25 +1062,25 @@
                                 <div class="home_HowToStartItems__3aSJ0">
                                     <a class="Clickable_clickable__1ZTaR blog_blogPostsPreview__2mKYU" href="blog/supercharge-your-nft-adventure-with-nftrade-academy.html">
                                         <div class="blog_blogPostsPreviewHeader__2H_W8">
-                                            <img class="blog_blogPostsPreviewHeaderImg__1S_gl" src="https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1-1024x576.png" alt="Supercharge Your NFT Adventure With NFTrade Academy" />
+                                            <img class="blog_blogPostsPreviewHeaderImg__1S_gl" src="https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1-1024x576.png" alt="Supercharge Your NFT Adventure With {{ env('APP_NAME') }} Academy" />
                                         </div>
                                         <div class="blog_blogPostsPreviewDescription__BLujR">
                                             <div class="Text_Text__3hFx0 Text_Text8__efUlR Text_Text400__1TTGf Text_TextmainBlack__25vmd">February 6, 2023</div>
-                                            <h4 class="Text_Text__3hFx0 Text_Text6__2n5uh Text_Text700__3bb9l Text_TextmainBlack__25vmd">Supercharge Your NFT Adventure With NFTrade Academy</h4>
+                                            <h4 class="Text_Text__3hFx0 Text_Text6__2n5uh Text_Text700__3bb9l Text_TextmainBlack__25vmd">Supercharge Your NFT Adventure With {{ env('APP_NAME') }} Academy</h4>
                                             <div style="margin-top:16px;margin-bottom:24px">
                                                 <div class="Text_Text__3hFx0 Text_Text8__efUlR Text_Text400__1TTGf Text_TextmainBlack__25vmd">
-                                                    <p>An overview of NFTrade Academy, our free-to-use knowledge base. Whether you’re a first-timer or expert, we have something for you!</p>
+                                                    <p>An overview of {{ env('APP_NAME') }} Academy, our free-to-use knowledge base. Whether you’re a first-timer or expert, we have something for you!</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                     <a class="Clickable_clickable__1ZTaR blog_blogPostsPreview__2mKYU" href="blog/nftrade-and-billiard-crypto-partner-for-secondary-marketplace-support.html">
                                         <div class="blog_blogPostsPreviewHeader__2H_W8">
-                                            <img class="blog_blogPostsPreviewHeaderImg__1S_gl" src="https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-1024x576.png" alt="NFTrade and Billiard Crypto Partner for Secondary Marketplace Support" />
+                                            <img class="blog_blogPostsPreviewHeaderImg__1S_gl" src="https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-1024x576.png" alt="{{ env('APP_NAME') }} and Billiard Crypto Partner for Secondary Marketplace Support" />
                                         </div>
                                         <div class="blog_blogPostsPreviewDescription__BLujR">
                                             <div class="Text_Text__3hFx0 Text_Text8__efUlR Text_Text400__1TTGf Text_TextmainBlack__25vmd">February 2, 2023</div>
-                                            <h4 class="Text_Text__3hFx0 Text_Text6__2n5uh Text_Text700__3bb9l Text_TextmainBlack__25vmd">NFTrade and Billiard Crypto Partner for Secondary Marketplace Support</h4>
+                                            <h4 class="Text_Text__3hFx0 Text_Text6__2n5uh Text_Text700__3bb9l Text_TextmainBlack__25vmd">{{ env('APP_NAME') }} and Billiard Crypto Partner for Secondary Marketplace Support</h4>
                                             <div style="margin-top:16px;margin-bottom:24px">
                                                 <div class="Text_Text__3hFx0 Text_Text8__efUlR Text_Text400__1TTGf Text_TextmainBlack__25vmd">
                                                     <p>Announcing our partnership with Billiard Crypto, a play-to-earn billiards game on BNB Chain.</p>
@@ -1089,14 +1090,14 @@
                                     </a>
                                     <a class="Clickable_clickable__1ZTaR blog_blogPostsPreview__2mKYU" href="blog/nftrade-and-gamerse-announce-strategic-partnership.html">
                                         <div class="blog_blogPostsPreviewHeader__2H_W8">
-                                            <img class="blog_blogPostsPreviewHeaderImg__1S_gl" src="https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3-1024x576.png" alt="NFTrade and Gamerse Announce Strategic Partnership" />
+                                            <img class="blog_blogPostsPreviewHeaderImg__1S_gl" src="https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3-1024x576.png" alt="{{ env('APP_NAME') }} and Gamerse Announce Strategic Partnership" />
                                         </div>
                                         <div class="blog_blogPostsPreviewDescription__BLujR">
                                             <div class="Text_Text__3hFx0 Text_Text8__efUlR Text_Text400__1TTGf Text_TextmainBlack__25vmd">January 31, 2023</div>
-                                            <h4 class="Text_Text__3hFx0 Text_Text6__2n5uh Text_Text700__3bb9l Text_TextmainBlack__25vmd">NFTrade and Gamerse Announce Strategic Partnership</h4>
+                                            <h4 class="Text_Text__3hFx0 Text_Text6__2n5uh Text_Text700__3bb9l Text_TextmainBlack__25vmd">{{ env('APP_NAME') }} and Gamerse Announce Strategic Partnership</h4>
                                             <div style="margin-top:16px;margin-bottom:24px">
                                                 <div class="Text_Text__3hFx0 Text_Text8__efUlR Text_Text400__1TTGf Text_TextmainBlack__25vmd">
-                                                    <p>Partnership announcement between NFTrade and Gamerse.</p>
+                                                    <p>Partnership announcement between {{ env('APP_NAME') }} and Gamerse.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1109,7 +1110,7 @@
                                     <div class="home_CommunityListItem__3mnJq">
                                         <div>
                                             <div class="home_CommunityListItemContentImg__MAr82">
-                                                <img src="img/home/chat.png" alt="" />
+                                                <img src="{{ asset('client/img/home/chat.png') }}" alt="" />
                                                 <div class="Text_Text__3hFx0 Text_Text6__2n5uh Text_Text700__3bb9l Text_TextmainBlack__25vmd">Support and Feedback</div>
                                             </div>
                                             <div class="Text_Text__3hFx0 home_CommunityListItemContentDescription__159KE Text_Text7__1TYrf Text_Text500__3xW1h Text_TextmainBlack__25vmd">Ask questions, give feedback, and submit proposals. We are flexible and are always looking to improve our services with your help.</div>
@@ -1132,7 +1133,7 @@
                                     <div class="home_CommunityListItem__3mnJq">
                                         <div>
                                             <div class="home_CommunityListItemContentImg__MAr82">
-                                                <img src="img/home/chat2.png" alt="" />
+                                                <img src="{{ asset('client/img/home/chat2.png') }}" alt="" />
                                                 <div class="Text_Text__3hFx0 Text_Text6__2n5uh Text_Text700__3bb9l Text_TextmainBlack__25vmd">Blog</div>
                                             </div>
                                             <div class="Text_Text__3hFx0 home_CommunityListItemContentDescription__159KE Text_Text7__1TYrf Text_Text500__3xW1h Text_TextmainBlack__25vmd">Read about new features, collaborations, and news of the week in our blog.</div>
@@ -1146,7 +1147,7 @@
                                     <div class="home_CommunityListItem__3mnJq">
                                         <div>
                                             <div class="home_CommunityListItemContentImg__MAr82">
-                                                <img src="img/home/alert.png" alt="" />
+                                                <img src="{{ asset('client/img/home/alert.png') }}" alt="" />
                                                 <div class="Text_Text__3hFx0 Text_Text6__2n5uh Text_Text700__3bb9l Text_TextmainBlack__25vmd">Announcements</div>
                                             </div>
                                             <div class="Text_Text__3hFx0 home_CommunityListItemContentDescription__159KE Text_Text7__1TYrf Text_Text500__3xW1h Text_TextmainBlack__25vmd">Be the first to know about sales, new projects and collections, features, and upcoming events.</div>
@@ -1179,32 +1180,32 @@
                     <div class="Footer_footerLogosContainer__1AANG">
                         <div class="Footer_footerLogos__8HJFJ">
                             <a class="Clickable_clickable__1ZTaR" target="_blank" href="https://www.avax.network/">
-                                <img src="img/partners/avalanche.png" alt="logo" />
+                                <img src="{{ asset('client/img/partners/avalanche.png') }}" alt="logo" />
                             </a>
                             <a class="Clickable_clickable__1ZTaR" target="_blank" href="https://www.binance.com/">
-                                <img src="img/partners/binance.png" alt="logo" />
+                                <img src="{{ asset('client/img/partners/binance.png') }}" alt="logo" />
                             </a>
                             <a class="Clickable_clickable__1ZTaR" target="_blank" href="https://ethereum.org/">
-                                <img src="img/partners/ethereum.png" alt="logo" />
+                                <img src="{{ asset('client/img/partners/ethereum.png') }}" alt="logo" />
                             </a>
                             <a class="Clickable_clickable__1ZTaR" target="_blank" href="https://www.zokyo.io/">
-                                <img src="img/partners/zokyo.png" alt="logo" />
+                                <img src="{{ asset('client/img/partners/zokyo.png') }}" alt="logo" />
                             </a>
                             <a class="Clickable_clickable__1ZTaR" target="_blank" href="https://solana.com/">
-                                <img src="img/partners/solana.png" alt="logo" />
+                                <img src="{{ asset('client/img/partners/solana.png') }}" alt="logo" />
                             </a>
                             <a class="Clickable_clickable__1ZTaR" target="_blank" href="https://www.sfermion.io/">
-                                <img src="img/partners/sfermion.png" alt="logo" />
+                                <img src="{{ asset('client/img/partners/sfermion.png') }}" alt="logo" />
                             </a>
                             <a class="Clickable_clickable__1ZTaR" target="_blank" href="https://polygon.technology/">
-                                <img src="img/partners/polygon.png" alt="logo" />
+                                <img src="{{ asset('client/img/partners/polygon.png') }}" alt="logo" />
                             </a>
                         </div>
                     </div>
                     <div class="Footer_footerContent__3zg_t">
                         <div class="Footer_footerContentDescription__6PwI5">
-                            <img class="Logo_logo__Y3zkh" src="img/logo/logoDarkMode.svg" alt="NFTrade Logo" />
-                            <div class="Text_Text__3hFx0 Footer_footerContentDescriptionText__2rITw Text_Text9__2fNCx Text_Text500__3xW1h Text_TextmainGrey__s5Tf1">NFTrade is a decentralized multi-chain and blockchain-agnostic NFT platform. NFTrade is an indexer of all NFTs across all of their integrated chains, hosting the complete NFT lifecycle and allowing anyone to seamlessly create, buy, sell, swap, farm, and leverage NFTs across different blockchains. Using NFTrade, anyone can gain access to the entirety of their NFT, unlocking the total value of the NFT market.</div>
+                            <img class="Logo_logo__Y3zkh" src="{{ asset('client/img/logo/logoDarkMode.svg') }}" alt="NFTrade Logo" />
+                            <div class="Text_Text__3hFx0 Footer_footerContentDescriptionText__2rITw Text_Text9__2fNCx Text_Text500__3xW1h Text_TextmainGrey__s5Tf1">{{ env('APP_NAME') }} is a decentralized multi-chain and blockchain-agnostic NFT platform. {{ env('APP_NAME') }} is an indexer of all NFTs across all of their integrated chains, hosting the complete NFT lifecycle and allowing anyone to seamlessly create, buy, sell, swap, farm, and leverage NFTs across different blockchains. Using {{ env('APP_NAME') }}, anyone can gain access to the entirety of their NFT, unlocking the total value of the NFT market.</div>
                         </div>
                         <div class="Footer_footerContentPages__2aUEy">
                             <div class="Text_Text__3hFx0 Footer_footerContentTitle__2snCJ Text_Text7__1TYrf Text_Text700__3bb9l Text_TextmainGrey__s5Tf1">Trade &amp; Swap</div>
@@ -1314,7 +1315,7 @@
                             <!-- -->
                             <!-- -->All Rights Reserved
                             <!-- -->
-                            <span style="color:#0399FA">NFTrade</span>
+                            <span style="color:#0399FA">{{ env('APP_NAME') }}</span>
                         </div>
                         <div class="Footer_footerFootnoteLinks__3XIAy">
                             <div role="link" tabindex="0" class="Clickable_clickable__1ZTaR">
@@ -1342,2042 +1343,6 @@
     <div class="Cart_Cart___2Ykg"></div>
 </div>
 <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script id="__NEXT_DATA__" type="application/json">
-      {
-        "props": {
-          "pageProps": {
-            "data": {
-              "posts": [{
-                "id": 1007,
-                "date": "2023-02-06T15:22:33",
-                "date_gmt": "2023-02-06T15:22:33",
-                "guid": {
-                  "rendered": "https://nftrade.blog/?p=1007"
-                },
-                "modified": "2023-02-09T06:48:10",
-                "modified_gmt": "2023-02-09T06:48:10",
-                "slug": "supercharge-your-nft-adventure-with-nftrade-academy",
-                "status": "publish",
-                "type": "post",
-                "link": "https://nftrade.blog/blog/supercharge-your-nft-adventure-with-nftrade-academy",
-                "title": {
-                  "rendered": "Supercharge Your NFT Adventure With NFTrade Academy"
-                },
-                "content": {
-                  "rendered": "\n\u003cp\u003eThe release of NFTrade Academy represents an opportunity for everyone to hone in on their NFT skills, providing a comprehensive and accessible education program and knowledge base for users of all levels, totally free of charge. This all-encompassing resource is designed from the bottom up to provide valuable insights and information for anyone interested in NFTs, regardless of their prior experience level. Whether you are a newcomer to NFTs or an experienced trader, NFTrade Academy offers the perfect opportunity to shape your aptitude, expand your knowledge, and prepare yourself for the next NFT bull run.\u003c/p\u003e\n\n\n\n\u003cp\u003eNFTrade Academy has structured around 6 topic subcategories, known as blocks, that cover all aspects of the NFT ecosystem. Over 30 lessons/articles are already live, with more coming down the line. The topic blocks include:\u003c/p\u003e\n\n\n\n\u003cul\u003e\n\u003cli\u003e\u003cspan style=\"text-decoration: underline;\"\u003e\u003ca href=\"https://nftrade.com/introduction-to-nfts\" data-type=\"URL\" data-id=\"https://nftrade.com/introduction-to-nfts\" target=\"_blank\" rel=\"noreferrer noopener\"\u003eIntroduction to NFTs\u003c/a\u003e\u003c/span\u003e\u003c/li\u003e\n\n\n\n\u003cli\u003e\u003cspan style=\"text-decoration: underline;\"\u003e\u003ca href=\"https://nftrade.com/creating-nft\" data-type=\"URL\" data-id=\"https://nftrade.com/creating-nft\" target=\"_blank\" rel=\"noreferrer noopener\"\u003eCreating NFTs\u003c/a\u003e\u003c/span\u003e\u003c/li\u003e\n\n\n\n\u003cli\u003e\u003cspan style=\"text-decoration: underline;\"\u003e\u003ca href=\"https://nftrade.com/selling\" data-type=\"URL\" data-id=\"https://nftrade.com/selling\" target=\"_blank\" rel=\"noreferrer noopener\"\u003eSelling NFTs\u003c/a\u003e\u003c/span\u003e \u003c/li\u003e\n\n\n\n\u003cli\u003e\u003cspan style=\"text-decoration: underline;\"\u003e\u003ca href=\"https://nftrade.com/buying\" data-type=\"URL\" data-id=\"https://nftrade.com/buying\" target=\"_blank\" rel=\"noreferrer noopener\"\u003eBuying NFTs\u003c/a\u003e\u003c/span\u003e\u003c/li\u003e\n\n\n\n\u003cli\u003e\u003cspan style=\"text-decoration: underline;\"\u003e\u003ca href=\"https://nftrade.com/security\" data-type=\"URL\" data-id=\"https://nftrade.com/security\" target=\"_blank\" rel=\"noreferrer noopener\"\u003eNFT Security\u003c/a\u003e\u003c/span\u003e\u003c/li\u003e\n\n\n\n\u003cli\u003e\u003cspan style=\"text-decoration: underline;\"\u003e\u003ca href=\"https://nftrade.com/what-can-you-do-with-nfts\" data-type=\"URL\" data-id=\"https://nftrade.com/what-can-you-do-with-nfts\" target=\"_blank\" rel=\"noreferrer noopener\"\u003eWhat Can You Do with NFTs\u003c/a\u003e\u003c/span\u003e \u003c/li\u003e\n\u003c/ul\u003e\n\n\n\n\u003cp\u003eEach subcategory is designed to provide complete, in-depth information on the subject matter, allowing users to gain a deep understanding of the NFT industry and its various components.\u003c/p\u003e\n\n\n\n\u003cp\u003e\u003cstrong\u003eThe Introduction to NFTs\u003c/strong\u003e subcategory provides a sweeping overview of what NFTs are and how they work, including the various types of NFTs, their potential impact on the future of digital assets, and the unique advantages they offer over traditional forms of digital asset ownership. By understanding the basics of NFTs, users will be better equipped to navigate the NFT landscape and take advantage of the opportunities it presents.\u003c/p\u003e\n\n\n\n\u003cp\u003e\u003cstrong\u003eThe Buying NFTs\u003c/strong\u003e block covers the process of purchasing NFTs, including how to evaluate their potential value, assess the risks involved, and make more informed buying decisions. This section is essential for anyone looking to purchase NFTs, especially as speculative assets, as it provides a solid foundation for making educated decisions in this rapidly evolving industry.\u003c/p\u003e\n\n\n\n\u003cp\u003e\u003cstrong\u003eThe Creating NFTs\u003c/strong\u003e subcategory covers the process of creating your NFTs or NFT collection, including tips on how to make your NFTs appealing to potential buyers. Whether you are an artist, musician, developer, or simply looking to create unique digital assets, this section provides vital insights and information on how to bring your NFTs to market successfully.\u003c/p\u003e\n\n\n\n\u003cp\u003e\u003cstrong\u003eNFT Security\u003c/strong\u003e is a critical aspect of this nascent asset class, and NFTrade Academy covers the best practices for securing your NFTs. This includes how to avoid scams, how to protect your NFTs, and how to ensure the safe and secure transfer of NFTs. This section is particularly important for anyone looking to buy and hold NFTs long-term, as it provides a comprehensive understanding of the risks involved and how to mitigate them.\u003c/p\u003e\n\n\n\n\u003cp\u003e\u003cstrong\u003eThe Selling NFTs\u003c/strong\u003e block provides valuable information on how to successfully market and sell your NFTs, including tips on pricing and promoting your NFTs to potential buyers. Whether you are an artist looking to monetize your work or a trader looking to sell NFTs for a profit, this section provides essential information on how to successfully navigate the NFT marketplace.\u003c/p\u003e\n\n\n\n\u003cp\u003eFinally, the \u0026#8216;\u003cstrong\u003eWhat Can You Do with NFTs\u003c/strong\u003e\u0026#8216; subcategory covers the various use cases of NFTs, including gaming, art, phygital items, real-world assets, music, and much more. This section provides a thorough overview of the many different ways NFTs are being used and the exciting new opportunities that are emerging in the NFT space. It highlights the potential of NFTs to revolutionize the way we think about digital ownership while providing valuable insights into the future of this rapidly evolving industry.\u003c/p\u003e\n\n\n\n\u003cp\u003eNFTrade Academy is a game-changer for anyone seeking to learn more about NFTs and take advantage of the opportunities they present. As a free and open resource, it offers unparalleled access to knowledge and expertise in the sector, putting users in a prime position to lead the NFT revolution and be ready for the next bull run. Its comprehensive and in-depth curriculum, covering all aspects of the NFT industry, makes it an invaluable resource for anyone looking to expand their understanding and knowledge of the space. Whether you\u0026#8217;re a newcomer or an experienced trader, NFTrade Academy is the perfect opportunity to enhance your skills and gain the confidence to succeed in the novel and dynamic world of NFTs.\u003c/p\u003e\n\n\n\n\u003cp\u003e\u003cstrong\u003e\u003cspan style=\"text-decoration: underline;\"\u003e\u003ca href=\"https://nftrade.com/academy\" data-type=\"URL\" data-id=\"https://nftrade.com/academy\" target=\"_blank\" rel=\"noreferrer noopener\"\u003eVisit NFTrade Academy today\u003c/a\u003e\u003c/span\u003e\u003c/strong\u003e.\u003c/p\u003e\n",
-                  "protected": false
-                },
-                "excerpt": {
-                  "rendered": "\u003cp\u003eAn overview of NFTrade Academy, our free-to-use knowledge base. Whether you\u0026#8217;re a first-timer or expert, we have something for you!\u003c/p\u003e\n",
-                  "protected": false
-                },
-                "author": 4,
-                "featured_media": 1008,
-                "comment_status": "open",
-                "ping_status": "open",
-                "sticky": true,
-                "template": "",
-                "format": "standard",
-                "meta": {
-                  "footnotes": ""
-                },
-                "categories": [15],
-                "tags": [20, 26, 17, 24, 7, 16],
-                "_links": {
-                  "self": [{
-                    "href": "https://nftrade.blog/wp-json/wp/v2/posts/1007"
-                  }],
-                  "collection": [{
-                    "href": "https://nftrade.blog/wp-json/wp/v2/posts"
-                  }],
-                  "about": [{
-                    "href": "https://nftrade.blog/wp-json/wp/v2/types/post"
-                  }],
-                  "author": [{
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/users/4"
-                  }],
-                  "replies": [{
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/comments?post=1007"
-                  }],
-                  "version-history": [{
-                    "count": 6,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/posts/1007/revisions"
-                  }],
-                  "predecessor-version": [{
-                    "id": 1075,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/posts/1007/revisions/1075"
-                  }],
-                  "wp:featuredmedia": [{
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/media/1008"
-                  }],
-                  "wp:attachment": [{
-                    "href": "https://nftrade.blog/wp-json/wp/v2/media?parent=1007"
-                  }],
-                  "wp:term": [{
-                    "taxonomy": "category",
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/categories?post=1007"
-                  }, {
-                    "taxonomy": "post_tag",
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/tags?post=1007"
-                  }],
-                  "curies": [{
-                    "name": "wp",
-                    "href": "https://api.w.org/{rel}",
-                    "templated": true
-                  }]
-                },
-                "media": {
-                  "id": 1008,
-                  "date": "2023-02-06T15:20:51",
-                  "date_gmt": "2023-02-06T15:20:51",
-                  "guid": {
-                    "rendered": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1.png"
-                  },
-                  "modified": "2023-02-06T15:20:51",
-                  "modified_gmt": "2023-02-06T15:20:51",
-                  "slug": "twitter-post-171-1",
-                  "status": "inherit",
-                  "type": "attachment",
-                  "link": "https://nftrade.blog/blog/supercharge-your-nft-adventure-with-nftrade-academy/attachment/twitter-post-171-1",
-                  "title": {
-                    "rendered": "Twitter post \u0026#8211; 171 (1)"
-                  },
-                  "author": 4,
-                  "comment_status": "open",
-                  "ping_status": "closed",
-                  "template": "",
-                  "meta": [],
-                  "description": {
-                    "rendered": "\u003cp class=\"attachment\"\u003e\u003ca href='https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1.png'\u003e\u003cimg loading=\"lazy\" width=\"300\" height=\"169\" src=\"https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1-300x169.png\" class=\"attachment-medium size-medium\" alt=\"\" decoding=\"async\" srcset=\"https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1-300x169.png 300w, https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1-1024x576.png 1024w, https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1-768x432.png 768w, https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1-1536x864.png 1536w, https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1-2048x1152.png 2048w\" sizes=\"(max-width: 300px) 100vw, 300px\" /\u003e\u003c/a\u003e\u003c/p\u003e\n"
-                  },
-                  "caption": {
-                    "rendered": ""
-                  },
-                  "alt_text": "",
-                  "media_type": "image",
-                  "mime_type": "image/png",
-                  "media_details": {
-                    "width": 2400,
-                    "height": 1350,
-                    "file": "2023/02/Twitter-post-171-1.png",
-                    "filesize": 1641946,
-                    "sizes": {
-                      "medium": {
-                        "file": "Twitter-post-171-1-300x169.png",
-                        "width": 300,
-                        "height": 169,
-                        "filesize": 50164,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1-300x169.png"
-                      },
-                      "large": {
-                        "file": "Twitter-post-171-1-1024x576.png",
-                        "width": 1024,
-                        "height": 576,
-                        "filesize": 305771,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1-1024x576.png"
-                      },
-                      "thumbnail": {
-                        "file": "Twitter-post-171-1-150x150.png",
-                        "width": 150,
-                        "height": 150,
-                        "filesize": 24165,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1-150x150.png"
-                      },
-                      "medium_large": {
-                        "file": "Twitter-post-171-1-768x432.png",
-                        "width": 768,
-                        "height": 432,
-                        "filesize": 196277,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1-768x432.png"
-                      },
-                      "1536x1536": {
-                        "file": "Twitter-post-171-1-1536x864.png",
-                        "width": 1536,
-                        "height": 864,
-                        "filesize": 610371,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1-1536x864.png"
-                      },
-                      "2048x2048": {
-                        "file": "Twitter-post-171-1-2048x1152.png",
-                        "width": 2048,
-                        "height": 1152,
-                        "filesize": 1072343,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1-2048x1152.png"
-                      },
-                      "full": {
-                        "file": "Twitter-post-171-1.png",
-                        "width": 2400,
-                        "height": 1350,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1.png"
-                      }
-                    },
-                    "image_meta": {
-                      "aperture": "0",
-                      "credit": "",
-                      "camera": "",
-                      "caption": "",
-                      "created_timestamp": "0",
-                      "copyright": "",
-                      "focal_length": "0",
-                      "iso": "0",
-                      "shutter_speed": "0",
-                      "title": "",
-                      "orientation": "0",
-                      "keywords": []
-                    }
-                  },
-                  "post": 1007,
-                  "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-171-1.png",
-                  "_links": {
-                    "self": [{
-                      "href": "https://nftrade.blog/wp-json/wp/v2/media/1008"
-                    }],
-                    "collection": [{
-                      "href": "https://nftrade.blog/wp-json/wp/v2/media"
-                    }],
-                    "about": [{
-                      "href": "https://nftrade.blog/wp-json/wp/v2/types/attachment"
-                    }],
-                    "author": [{
-                      "embeddable": true,
-                      "href": "https://nftrade.blog/wp-json/wp/v2/users/4"
-                    }],
-                    "replies": [{
-                      "embeddable": true,
-                      "href": "https://nftrade.blog/wp-json/wp/v2/comments?post=1008"
-                    }]
-                  }
-                },
-                "category": {
-                  "slug": "blog"
-                }
-              }, {
-                "id": 997,
-                "date": "2023-02-02T13:13:44",
-                "date_gmt": "2023-02-02T13:13:44",
-                "guid": {
-                  "rendered": "https://nftrade.blog/?p=997"
-                },
-                "modified": "2023-02-02T13:28:03",
-                "modified_gmt": "2023-02-02T13:28:03",
-                "slug": "nftrade-and-billiard-crypto-partner-for-secondary-marketplace-support",
-                "status": "publish",
-                "type": "post",
-                "link": "https://nftrade.blog/blog/nftrade-and-billiard-crypto-partner-for-secondary-marketplace-support",
-                "title": {
-                  "rendered": "NFTrade and Billiard Crypto Partner for Secondary Marketplace Support"
-                },
-                "content": {
-                  "rendered": "\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg decoding=\"async\" loading=\"lazy\" width=\"1024\" height=\"576\" src=\"https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-1024x576.png\" alt=\"\" class=\"wp-image-999\" srcset=\"https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-1024x576.png 1024w, https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-300x169.png 300w, https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-768x432.png 768w, https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-1536x864.png 1536w, https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-2048x1152.png 2048w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /\u003e\u003c/figure\u003e\n\n\n\n\u003cp\u003eWe are happy to announce a strategic partnership between NFTrade and Billiard Crypto, a play-to-earn online billiards game. Our collaboration will support Billiard Crypto as an official secondary marketplace for all their NFT trading needs, including buying, selling, swapping, and earning NFTs, offering an exceptional NFT trading experience for their user base.\u003c/p\u003e\n\n\n\n\u003cp\u003eBilliard Crypto is a new play-to-earn game on BNB Chain that utilizes NFTs to reward and incentivize its players. As a marketplace partner, we will provide the technical infrastructure needed to provide a seamless, decentralized, and non-custodial trading experience for Billiard Crypto users. As NFTrade users, Billiard Crypto gamers retain complete control over their NFTs until the point of sale. This ensures optimum ownership rights and a trustless ecosystem for transactions, making it possible for Billiard Crypto users to retain peace of mind when it comes to their NFTs. The partnership will not only increase the secondary market liquidity of Billiard Crypto NFTs, but will also provide broader exposure and access to these NFTs from the NFTrade community.\u003c/p\u003e\n\n\n\n\u003cp\u003eThrough the verified Billiard Crypto NFT collection page, users will have access to all the game\u0026#8217;s NFTs and trading statistics, making it easier to analyze buying and selling opportunities for gamers, enthusiasts, and speculators. With all of this information at their fingertips, Billiard Crypto users will be able to make informed decisions about their NFT portfolios and take advantage of the best buying and selling opportunities on the market.\u003c/p\u003e\n\n\n\n\u003cp\u003eWe are excited to support the Billiard Crypto community, and look forward to seeing the impact it will have on their collection. After this initial collaboration, we will continue to explore additional ways to bolster the Billiard Crypto ecosystem. We look forward to working with the Billiard Crypto team to make their vision a reality and to continue to innovate and push the boundaries of what is possible in the NFT space.\u003c/p\u003e\n\n\n\n\u003cp\u003eCheck out the complete Billiard Crypto NFT collection here: \u003ca href=\"https://nftrade.com/collection/billiard-crypto-nft\" target=\"_blank\" rel=\"noreferrer noopener\"\u003ehttps://nftrade.com/collection/billiard-crypto-nft\u003c/a\u003e\u003c/p\u003e\n",
-                  "protected": false
-                },
-                "excerpt": {
-                  "rendered": "\u003cp\u003eAnnouncing our partnership with Billiard Crypto, a play-to-earn billiards game on BNB Chain.\u003c/p\u003e\n",
-                  "protected": false
-                },
-                "author": 4,
-                "featured_media": 999,
-                "comment_status": "open",
-                "ping_status": "open",
-                "sticky": true,
-                "template": "",
-                "format": "standard",
-                "meta": {
-                  "footnotes": ""
-                },
-                "categories": [15],
-                "tags": [20, 209, 17, 22, 7, 210, 19],
-                "_links": {
-                  "self": [{
-                    "href": "https://nftrade.blog/wp-json/wp/v2/posts/997"
-                  }],
-                  "collection": [{
-                    "href": "https://nftrade.blog/wp-json/wp/v2/posts"
-                  }],
-                  "about": [{
-                    "href": "https://nftrade.blog/wp-json/wp/v2/types/post"
-                  }],
-                  "author": [{
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/users/4"
-                  }],
-                  "replies": [{
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/comments?post=997"
-                  }],
-                  "version-history": [{
-                    "count": 5,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/posts/997/revisions"
-                  }],
-                  "predecessor-version": [{
-                    "id": 1005,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/posts/997/revisions/1005"
-                  }],
-                  "wp:featuredmedia": [{
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/media/999"
-                  }],
-                  "wp:attachment": [{
-                    "href": "https://nftrade.blog/wp-json/wp/v2/media?parent=997"
-                  }],
-                  "wp:term": [{
-                    "taxonomy": "category",
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/categories?post=997"
-                  }, {
-                    "taxonomy": "post_tag",
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/tags?post=997"
-                  }],
-                  "curies": [{
-                    "name": "wp",
-                    "href": "https://api.w.org/{rel}",
-                    "templated": true
-                  }]
-                },
-                "media": {
-                  "id": 999,
-                  "date": "2023-02-02T13:06:10",
-                  "date_gmt": "2023-02-02T13:06:10",
-                  "guid": {
-                    "rendered": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1.png"
-                  },
-                  "modified": "2023-02-02T13:06:10",
-                  "modified_gmt": "2023-02-02T13:06:10",
-                  "slug": "twitter-post-166-1",
-                  "status": "inherit",
-                  "type": "attachment",
-                  "link": "https://nftrade.blog/blog/nftrade-and-billiard-crypto-partner-for-secondary-marketplace-support/attachment/twitter-post-166-1",
-                  "title": {
-                    "rendered": "Twitter-post-166-1"
-                  },
-                  "author": 4,
-                  "comment_status": "open",
-                  "ping_status": "closed",
-                  "template": "",
-                  "meta": [],
-                  "description": {
-                    "rendered": "\u003cp class=\"attachment\"\u003e\u003ca href='https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1.png'\u003e\u003cimg loading=\"lazy\" width=\"300\" height=\"169\" src=\"https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-300x169.png\" class=\"attachment-medium size-medium\" alt=\"\" decoding=\"async\" srcset=\"https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-300x169.png 300w, https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-1024x576.png 1024w, https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-768x432.png 768w, https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-1536x864.png 1536w, https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-2048x1152.png 2048w\" sizes=\"(max-width: 300px) 100vw, 300px\" /\u003e\u003c/a\u003e\u003c/p\u003e\n"
-                  },
-                  "caption": {
-                    "rendered": ""
-                  },
-                  "alt_text": "",
-                  "media_type": "image",
-                  "mime_type": "image/png",
-                  "media_details": {
-                    "width": 2400,
-                    "height": 1350,
-                    "file": "2023/02/Twitter-post-166-1.png",
-                    "filesize": 1849299,
-                    "sizes": {
-                      "medium": {
-                        "file": "Twitter-post-166-1-300x169.png",
-                        "width": 300,
-                        "height": 169,
-                        "filesize": 44435,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-300x169.png"
-                      },
-                      "large": {
-                        "file": "Twitter-post-166-1-1024x576.png",
-                        "width": 1024,
-                        "height": 576,
-                        "filesize": 298765,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-1024x576.png"
-                      },
-                      "thumbnail": {
-                        "file": "Twitter-post-166-1-150x150.png",
-                        "width": 150,
-                        "height": 150,
-                        "filesize": 20349,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-150x150.png"
-                      },
-                      "medium_large": {
-                        "file": "Twitter-post-166-1-768x432.png",
-                        "width": 768,
-                        "height": 432,
-                        "filesize": 183744,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-768x432.png"
-                      },
-                      "1536x1536": {
-                        "file": "Twitter-post-166-1-1536x864.png",
-                        "width": 1536,
-                        "height": 864,
-                        "filesize": 642527,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-1536x864.png"
-                      },
-                      "2048x2048": {
-                        "file": "Twitter-post-166-1-2048x1152.png",
-                        "width": 2048,
-                        "height": 1152,
-                        "filesize": 1180720,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1-2048x1152.png"
-                      },
-                      "full": {
-                        "file": "Twitter-post-166-1.png",
-                        "width": 2400,
-                        "height": 1350,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1.png"
-                      }
-                    },
-                    "image_meta": {
-                      "aperture": "0",
-                      "credit": "",
-                      "camera": "",
-                      "caption": "",
-                      "created_timestamp": "0",
-                      "copyright": "",
-                      "focal_length": "0",
-                      "iso": "0",
-                      "shutter_speed": "0",
-                      "title": "",
-                      "orientation": "0",
-                      "keywords": []
-                    }
-                  },
-                  "post": 997,
-                  "source_url": "https://nftrade.blog/wp-content/uploads/2023/02/Twitter-post-166-1.png",
-                  "_links": {
-                    "self": [{
-                      "href": "https://nftrade.blog/wp-json/wp/v2/media/999"
-                    }],
-                    "collection": [{
-                      "href": "https://nftrade.blog/wp-json/wp/v2/media"
-                    }],
-                    "about": [{
-                      "href": "https://nftrade.blog/wp-json/wp/v2/types/attachment"
-                    }],
-                    "author": [{
-                      "embeddable": true,
-                      "href": "https://nftrade.blog/wp-json/wp/v2/users/4"
-                    }],
-                    "replies": [{
-                      "embeddable": true,
-                      "href": "https://nftrade.blog/wp-json/wp/v2/comments?post=999"
-                    }]
-                  }
-                },
-                "category": {
-                  "slug": "blog"
-                }
-              }, {
-                "id": 989,
-                "date": "2023-01-31T14:02:01",
-                "date_gmt": "2023-01-31T14:02:01",
-                "guid": {
-                  "rendered": "https://nftrade.blog/?p=989"
-                },
-                "modified": "2023-01-31T14:35:59",
-                "modified_gmt": "2023-01-31T14:35:59",
-                "slug": "nftrade-and-gamerse-announce-strategic-partnership",
-                "status": "publish",
-                "type": "post",
-                "link": "https://nftrade.blog/blog/nftrade-and-gamerse-announce-strategic-partnership",
-                "title": {
-                  "rendered": "NFTrade and Gamerse Announce Strategic Partnership"
-                },
-                "content": {
-                  "rendered": "\n\u003cfigure class=\"wp-block-image size-full\"\u003e\u003cimg decoding=\"async\" loading=\"lazy\" width=\"720\" height=\"405\" src=\"https://nftrade.blog/wp-content/uploads/2023/01/image-1.png\" alt=\"\" class=\"wp-image-990\" srcset=\"https://nftrade.blog/wp-content/uploads/2023/01/image-1.png 720w, https://nftrade.blog/wp-content/uploads/2023/01/image-1-300x169.png 300w\" sizes=\"(max-width: 720px) 100vw, 720px\" /\u003e\u003c/figure\u003e\n\n\n\n\u003cp id=\"1f98\"\u003eWe are delighted to announce a new strategic partnership between NFTrade and Gamerse, a community-focused NFT gaming platform and social marketplace. This partnership will bring together NFTrade’s technical expertise and Gamerse’s experience and community in the gaming industry to offer a seamless NFT secondary market experience for all. We are collaborating in a variety of ways, so let’s get started.\u003c/p\u003e\n\n\n\n\u003cp id=\"9a24\"\u003eAs an official secondary marketplace for all of Gamerse’s NFT needs, NFTrade will provide the infrastructure necessary for users to transact NFT assets in a decentralized, non-custodial environment. This means that Gamerse users will have complete control over their NFTs from start to finish, ensuring trustless ownership and transactions. With this partnership, not only will the future secondary market liquidity of Gamerse NFTs be improved, but the broader NFT market will also have the opportunity to get exposure to these NFTs, a possibility that is not available if a game creates a sole internal and isolated NFT marketplace.\u003c/p\u003e\n\n\n\n\u003cp id=\"c590\"\u003eThe verified Gamerse NFT collection page will allow users to access all the game’s NFTs and relevant trading statistics, making it easier to analyze and take advantage of the best buying and selling opportunities in the market. This will provide Gamerse gamers with the necessary information to make informed decisions and maximize their returns.\u003c/p\u003e\n\n\n\n\u003cp id=\"24fe\"\u003eIn addition, Gamerse is also set to launch an exclusive anime NFT collection of 1000 pieces. These anime NFTs boast the utility of granting permissionless verification (purple “Gamer” checkmark) of the holder’s social profile on the Gamerse platform. With only a limited supply available, users should stay on the lookout for this anticipated collection release.\u003c/p\u003e\n\n\n\n\u003cp id=\"725c\"\u003eThrough this partnership with NFTrade, Gamerse users will have access to a reliable and trustworthy secondary market for the purchase and sale of their anime NFTs. Whether you’re a seasoned NFT collector or just getting started, this is an opportunity not to be missed. With NFTrade’s technical infrastructure and Gamerse’s expertise in the gaming industry, you can be sure that your NFT transactions will be smooth and seamless.\u003c/p\u003e\n\n\n\n\u003cp id=\"7467\"\u003eWe are eager to work closely with the Gamerse team and help make their vision of a thriving NFT secondary market a reality. Our collaboration will not only bring benefits to Gamerse users, but also to the broader NFT community. We believe that by combining our expertise, we will be able to create a trusted and reliable NFT secondary market that will drive the growth and development of the NFT industry.\u003c/p\u003e\n\n\n\n\u003cp id=\"4262\"\u003eThis is just the beginning of our strategic partnership, as we are working together with Gamerse behind the scenes to take their NFTs and ecosystem to the next level (more info coming soon).\u003c/p\u003e\n\n\n\n\u003cp id=\"ea1c\"\u003eWe are excited about the opportunities that this partnership presents and are confident that it will deliver tremendous value to both Gamerse users and the NFT community as a whole. Stay tuned for more updates as we work together to bring this project and their collections to a new audience of interested gamers and NFT enthusiasts.\u003c/p\u003e\n\n\n\n\u003ch1 class=\"wp-block-heading\" id=\"d8d3\"\u003e\u003cstrong\u003eAbout Gamerse\u003c/strong\u003e\u003c/h1\u003e\n\n\n\n\u003cp id=\"67ba\"\u003eGamerse is unifying the fragmented NFT gaming community through its cross-chain, cross-domain and cross-verse solutions to create the first-ever NFT gaming social ecosystem.\u003c/p\u003e\n\n\n\n\u003cp id=\"98c1\"\u003eGamers will be able to explore popular NFT games, receive exclusive drops and trade in-game NFT assets from skins to land and collectibles, all aggregated in a single social marketplace. Gamerse unites gamers in a single, fun social platform, constantly adapting to the newest and most viral trends while benefiting creators and gamers alike through its pioneering share-to-earn model. As the first LFG (Looking For Groups) platform dedicated to NFT gaming and metaverses, Gamerse will be around for gamers of all shades and hues, no matter which title holds the number 1 spot.\u003c/p\u003e\n\n\n\n\u003cp id=\"8404\"\u003e\u003ca href=\"https://www.gamerse.com/\" rel=\"noreferrer noopener\" target=\"_blank\"\u003e\u003cstrong\u003eWebsite\u003c/strong\u003e\u003c/a\u003e\u003cstrong\u003e\u0026nbsp;|\u0026nbsp;\u003c/strong\u003e\u003ca href=\"https://twitter.com/Gamersenft\" rel=\"noreferrer noopener\" target=\"_blank\"\u003e\u003cstrong\u003eTwitter\u003c/strong\u003e\u003c/a\u003e\u003cstrong\u003e\u0026nbsp;|\u0026nbsp;\u003c/strong\u003e\u003ca href=\"https://t.me/gamerseannouncement\" rel=\"noreferrer noopener\" target=\"_blank\"\u003e\u003cstrong\u003eTelegram Announcement\u003c/strong\u003e\u003c/a\u003e\u003cstrong\u003e\u0026nbsp;|\u0026nbsp;\u003c/strong\u003e\u003ca href=\"https://t.me/gamersecommunity\" rel=\"noreferrer noopener\" target=\"_blank\"\u003e\u003cstrong\u003eTelegram Group\u003c/strong\u003e\u003c/a\u003e\u003cstrong\u003e\u0026nbsp;|\u0026nbsp;\u003c/strong\u003e\u003ca href=\"https://discord.com/invite/SVAXQ7rNrp\" rel=\"noreferrer noopener\" target=\"_blank\"\u003e\u003cstrong\u003eDiscord\u003c/strong\u003e\u003c/a\u003e\u003cstrong\u003e\u0026nbsp;|\u0026nbsp;\u003c/strong\u003e\u003ca href=\"https://gamerse.medium.com/\"\u003e\u003cstrong\u003eMedium\u003c/strong\u003e\u003c/a\u003e\u003cstrong\u003e\u0026nbsp;|\u0026nbsp;\u003c/strong\u003e\u003ca href=\"https://www.linkedin.com/company/gamersenft/\" rel=\"noreferrer noopener\" target=\"_blank\"\u003e\u003cstrong\u003eLinkedIn\u003c/strong\u003e\u003c/a\u003e\u003c/p\u003e\n",
-                  "protected": false
-                },
-                "excerpt": {
-                  "rendered": "\u003cp\u003ePartnership announcement between NFTrade and Gamerse.\u003c/p\u003e\n",
-                  "protected": false
-                },
-                "author": 4,
-                "featured_media": 996,
-                "comment_status": "open",
-                "ping_status": "open",
-                "sticky": true,
-                "template": "",
-                "format": "standard",
-                "meta": {
-                  "footnotes": ""
-                },
-                "categories": [15],
-                "tags": [20, 17, 19],
-                "_links": {
-                  "self": [{
-                    "href": "https://nftrade.blog/wp-json/wp/v2/posts/989"
-                  }],
-                  "collection": [{
-                    "href": "https://nftrade.blog/wp-json/wp/v2/posts"
-                  }],
-                  "about": [{
-                    "href": "https://nftrade.blog/wp-json/wp/v2/types/post"
-                  }],
-                  "author": [{
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/users/4"
-                  }],
-                  "replies": [{
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/comments?post=989"
-                  }],
-                  "version-history": [{
-                    "count": 2,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/posts/989/revisions"
-                  }],
-                  "predecessor-version": [{
-                    "id": 995,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/posts/989/revisions/995"
-                  }],
-                  "wp:featuredmedia": [{
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/media/996"
-                  }],
-                  "wp:attachment": [{
-                    "href": "https://nftrade.blog/wp-json/wp/v2/media?parent=989"
-                  }],
-                  "wp:term": [{
-                    "taxonomy": "category",
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/categories?post=989"
-                  }, {
-                    "taxonomy": "post_tag",
-                    "embeddable": true,
-                    "href": "https://nftrade.blog/wp-json/wp/v2/tags?post=989"
-                  }],
-                  "curies": [{
-                    "name": "wp",
-                    "href": "https://api.w.org/{rel}",
-                    "templated": true
-                  }]
-                },
-                "media": {
-                  "id": 996,
-                  "date": "2023-01-31T14:35:36",
-                  "date_gmt": "2023-01-31T14:35:36",
-                  "guid": {
-                    "rendered": "https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3.png"
-                  },
-                  "modified": "2023-01-31T14:35:36",
-                  "modified_gmt": "2023-01-31T14:35:36",
-                  "slug": "twitter-post-165-3",
-                  "status": "inherit",
-                  "type": "attachment",
-                  "link": "https://nftrade.blog/blog/nftrade-and-gamerse-announce-strategic-partnership/attachment/twitter-post-165-3",
-                  "title": {
-                    "rendered": "Twitter post \u0026#8211; 165 (3)"
-                  },
-                  "author": 4,
-                  "comment_status": "open",
-                  "ping_status": "closed",
-                  "template": "",
-                  "meta": [],
-                  "description": {
-                    "rendered": "\u003cp class=\"attachment\"\u003e\u003ca href='https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3.png'\u003e\u003cimg loading=\"lazy\" width=\"300\" height=\"169\" src=\"https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3-300x169.png\" class=\"attachment-medium size-medium\" alt=\"\" decoding=\"async\" srcset=\"https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3-300x169.png 300w, https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3-1024x576.png 1024w, https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3-768x432.png 768w, https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3-1536x864.png 1536w, https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3-2048x1152.png 2048w\" sizes=\"(max-width: 300px) 100vw, 300px\" /\u003e\u003c/a\u003e\u003c/p\u003e\n"
-                  },
-                  "caption": {
-                    "rendered": ""
-                  },
-                  "alt_text": "",
-                  "media_type": "image",
-                  "mime_type": "image/png",
-                  "media_details": {
-                    "width": 2400,
-                    "height": 1350,
-                    "file": "2023/01/Twitter-post-165-3.png",
-                    "filesize": 1883747,
-                    "sizes": {
-                      "medium": {
-                        "file": "Twitter-post-165-3-300x169.png",
-                        "width": 300,
-                        "height": 169,
-                        "filesize": 42382,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3-300x169.png"
-                      },
-                      "large": {
-                        "file": "Twitter-post-165-3-1024x576.png",
-                        "width": 1024,
-                        "height": 576,
-                        "filesize": 304749,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3-1024x576.png"
-                      },
-                      "thumbnail": {
-                        "file": "Twitter-post-165-3-150x150.png",
-                        "width": 150,
-                        "height": 150,
-                        "filesize": 19314,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3-150x150.png"
-                      },
-                      "medium_large": {
-                        "file": "Twitter-post-165-3-768x432.png",
-                        "width": 768,
-                        "height": 432,
-                        "filesize": 185472,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3-768x432.png"
-                      },
-                      "1536x1536": {
-                        "file": "Twitter-post-165-3-1536x864.png",
-                        "width": 1536,
-                        "height": 864,
-                        "filesize": 659664,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3-1536x864.png"
-                      },
-                      "2048x2048": {
-                        "file": "Twitter-post-165-3-2048x1152.png",
-                        "width": 2048,
-                        "height": 1152,
-                        "filesize": 1200290,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3-2048x1152.png"
-                      },
-                      "full": {
-                        "file": "Twitter-post-165-3.png",
-                        "width": 2400,
-                        "height": 1350,
-                        "mime_type": "image/png",
-                        "source_url": "https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3.png"
-                      }
-                    },
-                    "image_meta": {
-                      "aperture": "0",
-                      "credit": "",
-                      "camera": "",
-                      "caption": "",
-                      "created_timestamp": "0",
-                      "copyright": "",
-                      "focal_length": "0",
-                      "iso": "0",
-                      "shutter_speed": "0",
-                      "title": "",
-                      "orientation": "0",
-                      "keywords": []
-                    }
-                  },
-                  "post": 989,
-                  "source_url": "https://nftrade.blog/wp-content/uploads/2023/01/Twitter-post-165-3.png",
-                  "_links": {
-                    "self": [{
-                      "href": "https://nftrade.blog/wp-json/wp/v2/media/996"
-                    }],
-                    "collection": [{
-                      "href": "https://nftrade.blog/wp-json/wp/v2/media"
-                    }],
-                    "about": [{
-                      "href": "https://nftrade.blog/wp-json/wp/v2/types/attachment"
-                    }],
-                    "author": [{
-                      "embeddable": true,
-                      "href": "https://nftrade.blog/wp-json/wp/v2/users/4"
-                    }],
-                    "replies": [{
-                      "embeddable": true,
-                      "href": "https://nftrade.blog/wp-json/wp/v2/comments?post=996"
-                    }]
-                  }
-                },
-                "category": {
-                  "slug": "blog"
-                }
-              }],
-              "topCollections": {
-                "reportContracts": [{
-                  "chainId": 56,
-                  "id": "9afc3379-56fc-46e4-9e7e-dfd7926780d0",
-                  "contractId": "5541c4ab-bc02-473a-b211-998b4900f6b1",
-                  "contractAddress": "0x11fc887f8f4674ae70cd07605ea42f7dbfdda69d",
-                  "contractName": "Brick by Brick",
-                  "contractImage": "https://image.nftrade.com/uploads/7c94a24ea60afded57cf0152dfdb9b531677842409779.webp",
-                  "verified": true,
-                  "averagePriceDay": 400.14,
-                  "averagePriceWeek": 1795.63,
-                  "averagePriceMonth": 1427.45,
-                  "averagePriceAllTime": 1254.4,
-                  "volumeDay": 2000.71,
-                  "volumeWeek": 19751.93,
-                  "volumeMonth": 31404,
-                  "volumeAllTime": 219520.09,
-                  "changeDay": -61.83,
-                  "changeWeek": 275.03,
-                  "salesDay": 5,
-                  "salesWeek": 11,
-                  "salesMonth": 22,
-                  "salesAllTime": 175,
-                  "tradersDay": 0,
-                  "tradersWeek": 0,
-                  "tradersMonth": 0,
-                  "tradersAllTime": 0,
-                  "createdAt": "2023-08-10T13:00:41.146Z",
-                  "updatedAt": "2023-08-10T13:00:41.146Z",
-                  "reportId": "3e3ca2b4-f0da-49a5-baff-2d7c81259f39",
-                  "contract": {
-                    "chainId": 56,
-                    "id": "5541c4ab-bc02-473a-b211-998b4900f6b1",
-                    "displayName": "Brick by Brick",
-                    "slug": "brick-by-brick",
-                    "address": "0x11fc887f8f4674ae70cd07605ea42f7dbfdda69d",
-                    "name": "Brick by Brick",
-                    "symbol": "BBBNFT",
-                    "chainType": "evm",
-                    "verified": true,
-                    "forked": false,
-                    "trending": false,
-                    "hot": false,
-                    "ai_generated": false,
-                    "handmade": false,
-                    "error": false,
-                    "partial_royalty_support": false,
-                    "full_royalty_support": false,
-                    "exclusive": false,
-                    "featured": true,
-                    "image": "https://image.nftrade.com/uploads/7c94a24ea60afded57cf0152dfdb9b531677842409779.webp",
-                    "cover_image": "https://image.nftrade.com/uploads/fed8121d68928c601e2b05e2b2946aae1677842409956.webp",
-                    "description": "Brick By Brick NFTs are revolutionizing the NFT and crypto space by offering dividends from real world assets to pay NFT holders. Visit https://www.brickbybrickcrypto.com/ for more information.",
-                    "twitter": "https://twitter.com/B_by_BCrypto",
-                    "telegram": "https://t.me/+Xz2MORc131Q0YzM0",
-                    "discord": "",
-                    "website": "https://www.brickbybrickcrypto.com/",
-                    "telegramBotChatId": null,
-                    "floor": "2.2",
-                    "type": "EIP721",
-                    "aiGenerated": false,
-                    "partialRoyaltySupport": false,
-                    "fullRoyaltySupport": false,
-                    "coverImage": "https://image.nftrade.com/uploads/fed8121d68928c601e2b05e2b2946aae1677842409956.webp",
-                    "createdAt": "2023-03-02T12:42:58.339Z",
-                    "updatedAt": "2023-08-09T21:00:09.661Z"
-                  }
-                }, {
-                  "chainId": 43114,
-                  "id": "a29e387f-75f8-406d-b53d-779b70de036a",
-                  "contractId": "af9e1549-d489-40ae-8125-2e4852997f13",
-                  "contractAddress": "0xa695ea0c90d89a1463a53fa7a02168bc46fbbf7e",
-                  "contractName": "Castle Crush",
-                  "contractImage": "https://images.nftrade.com/uploads/e28f44284cab380cbff589a14c8a8a451662026220099.webp",
-                  "verified": true,
-                  "averagePriceDay": 21.42,
-                  "averagePriceWeek": 19.91,
-                  "averagePriceMonth": 23.78,
-                  "averagePriceAllTime": 70.62,
-                  "volumeDay": 578.3399999999999,
-                  "volumeWeek": 3205.16,
-                  "volumeMonth": 17430.230000000003,
-                  "volumeAllTime": 714156.75,
-                  "changeDay": -14.59,
-                  "changeWeek": -23.45,
-                  "salesDay": 27,
-                  "salesWeek": 161,
-                  "salesMonth": 733,
-                  "salesAllTime": 10113,
-                  "tradersDay": 0,
-                  "tradersWeek": 0,
-                  "tradersMonth": 0,
-                  "tradersAllTime": 0,
-                  "createdAt": "2023-08-10T13:00:41.146Z",
-                  "updatedAt": "2023-08-10T13:00:41.146Z",
-                  "reportId": "3e3ca2b4-f0da-49a5-baff-2d7c81259f39",
-                  "contract": {
-                    "chainId": 43114,
-                    "id": "af9e1549-d489-40ae-8125-2e4852997f13",
-                    "displayName": "Castle Crush",
-                    "slug": "castle-crush",
-                    "address": "0xa695ea0c90d89a1463a53fa7a02168bc46fbbf7e",
-                    "name": "Castle Crush",
-                    "symbol": null,
-                    "chainType": "evm",
-                    "verified": true,
-                    "forked": false,
-                    "trending": false,
-                    "hot": false,
-                    "ai_generated": false,
-                    "handmade": false,
-                    "error": false,
-                    "partial_royalty_support": false,
-                    "full_royalty_support": false,
-                    "exclusive": true,
-                    "featured": true,
-                    "image": "https://images.nftrade.com/uploads/e28f44284cab380cbff589a14c8a8a451662026220099.webp",
-                    "cover_image": "https://images.nftrade.com/uploads/3843daeba976ced73e4c095410db4ef81662026220611.webp",
-                    "description": "Castle Crush is a mobile, free-to-play, real-time strategy game developed by Wildlife Studios in partnership with Jungle Studios. Ascended and Founder Chests contain playable NFT cards which generate $ACS through gameplay.",
-                    "twitter": "https://twitter.com/playcastlecrush",
-                    "telegram": "",
-                    "discord": "https://discord.gg/castlecrush",
-                    "website": "https://castlecrushgame.com/",
-                    "telegramBotChatId": null,
-                    "floor": "0.1",
-                    "type": "EIP1155",
-                    "aiGenerated": false,
-                    "partialRoyaltySupport": false,
-                    "fullRoyaltySupport": false,
-                    "coverImage": "https://images.nftrade.com/uploads/3843daeba976ced73e4c095410db4ef81662026220611.webp",
-                    "createdAt": "2022-05-16T15:09:05.703Z",
-                    "updatedAt": "2023-08-10T12:55:15.568Z"
-                  }
-                }, {
-                  "chainId": 56,
-                  "id": "0c2b59a8-2f42-431d-b44e-67afc5180233",
-                  "contractId": "c3179d5e-1bf8-4263-ae65-3129c79d8c55",
-                  "contractAddress": "0xc031218cef355994d51cda0911b86f0a0e0dccaa",
-                  "contractName": "ZombieNFT",
-                  "contractImage": "https://image.nftrade.com/uploads/ad24fb5daa9b21185bb08a8147a79da01664899562306.webp",
-                  "verified": true,
-                  "averagePriceDay": 54.94,
-                  "averagePriceWeek": 73.62,
-                  "averagePriceMonth": 67.99,
-                  "averagePriceAllTime": 213.88,
-                  "volumeDay": 439.55,
-                  "volumeWeek": 1104.33,
-                  "volumeMonth": 2107.7400000000002,
-                  "volumeAllTime": 159766.06,
-                  "changeDay": null,
-                  "changeWeek": 182.24,
-                  "salesDay": 8,
-                  "salesWeek": 15,
-                  "salesMonth": 31,
-                  "salesAllTime": 747,
-                  "tradersDay": 0,
-                  "tradersWeek": 0,
-                  "tradersMonth": 0,
-                  "tradersAllTime": 0,
-                  "createdAt": "2023-08-10T13:00:41.146Z",
-                  "updatedAt": "2023-08-10T13:00:41.146Z",
-                  "reportId": "3e3ca2b4-f0da-49a5-baff-2d7c81259f39",
-                  "contract": {
-                    "chainId": 56,
-                    "id": "c3179d5e-1bf8-4263-ae65-3129c79d8c55",
-                    "displayName": "ZombieNFT",
-                    "slug": "zombienft",
-                    "address": "0xc031218cef355994d51cda0911b86f0a0e0dccaa",
-                    "name": "ZombieNFT",
-                    "symbol": null,
-                    "chainType": "evm",
-                    "verified": true,
-                    "forked": false,
-                    "trending": false,
-                    "hot": false,
-                    "ai_generated": false,
-                    "handmade": false,
-                    "error": false,
-                    "partial_royalty_support": false,
-                    "full_royalty_support": false,
-                    "exclusive": false,
-                    "featured": false,
-                    "image": "https://image.nftrade.com/uploads/ad24fb5daa9b21185bb08a8147a79da01664899562306.webp",
-                    "cover_image": "https://image.nftrade.com/uploads/0cfc4eed75b364ea5bddeb11909386fd1664899562531.webp",
-                    "description": "HORDE NFT Trading bots as a service, 10,000 unique ERC-721 revenue sharing NFTs.",
-                    "twitter": "https://twitter.com/HordeTweets",
-                    "telegram": "https://t.me/HordeOfficialChannel",
-                    "discord": "https://discord.gg/horde",
-                    "website": "https://horde.games/",
-                    "telegramBotChatId": null,
-                    "floor": "0.14",
-                    "type": "EIP721",
-                    "aiGenerated": false,
-                    "partialRoyaltySupport": false,
-                    "fullRoyaltySupport": false,
-                    "coverImage": "https://image.nftrade.com/uploads/0cfc4eed75b364ea5bddeb11909386fd1664899562531.webp",
-                    "createdAt": "2022-10-04T14:52:18.693Z",
-                    "updatedAt": "2023-08-10T08:00:36.948Z"
-                  }
-                }, {
-                  "chainId": 43114,
-                  "id": "3e2cd670-ad94-45d3-9b77-7513a0b311c4",
-                  "contractId": "e56895b5-cd1b-46e7-9b34-23255ffcb4d1",
-                  "contractAddress": "0x2144a0eb052dd991ec8f34b6a46d2d2eb765c026",
-                  "contractName": "Tiny Dragon",
-                  "contractImage": "https://images.nftrade.com/uploads/2ab9e2a69c688d8e5ba55056fd4fa3ff1662281713499.webp",
-                  "verified": true,
-                  "averagePriceDay": 143.55,
-                  "averagePriceWeek": 143.55,
-                  "averagePriceMonth": 143.55,
-                  "averagePriceAllTime": 268.2,
-                  "volumeDay": 143.55,
-                  "volumeWeek": 143.55,
-                  "volumeMonth": 143.55,
-                  "volumeAllTime": 293951.9,
-                  "changeDay": null,
-                  "changeWeek": null,
-                  "salesDay": 1,
-                  "salesWeek": 1,
-                  "salesMonth": 1,
-                  "salesAllTime": 1096,
-                  "tradersDay": 0,
-                  "tradersWeek": 0,
-                  "tradersMonth": 0,
-                  "tradersAllTime": 0,
-                  "createdAt": "2023-08-10T13:00:41.146Z",
-                  "updatedAt": "2023-08-10T13:00:41.146Z",
-                  "reportId": "3e3ca2b4-f0da-49a5-baff-2d7c81259f39",
-                  "contract": {
-                    "chainId": 43114,
-                    "id": "e56895b5-cd1b-46e7-9b34-23255ffcb4d1",
-                    "displayName": "Tiny Dragon",
-                    "slug": "tiny-dragon",
-                    "address": "0x2144a0eb052dd991ec8f34b6a46d2d2eb765c026",
-                    "name": "Tiny Dragon",
-                    "symbol": null,
-                    "chainType": "evm",
-                    "verified": true,
-                    "forked": false,
-                    "trending": false,
-                    "hot": false,
-                    "ai_generated": false,
-                    "handmade": false,
-                    "error": false,
-                    "partial_royalty_support": false,
-                    "full_royalty_support": false,
-                    "exclusive": false,
-                    "featured": false,
-                    "image": "https://images.nftrade.com/uploads/2ab9e2a69c688d8e5ba55056fd4fa3ff1662281713499.webp",
-                    "cover_image": "https://images.nftrade.com/uploads/c7465829bebfc783774ceec730d4474e1662281714010.webp",
-                    "description": "An adorable collection of 1,000 Tiny Dragons ready for battle! Each attribute determines the stat value in strength and defense in our play-to-earn arena. The rarer your Tiny Dragon, the higher the stats value it will carry and the greater your chance of winning lucrative rewards! \r\n\r\nThe rarity of each Tiny Dragon will be determined by background, colour, hats/hair, eyes, expression, horns, wings, tails, tail accessories, body extras, patterns and secondary colour.\r\n\r\n80% of revenue from this limited edition, first generation of Tiny Dragons will be used to buyback and burn $DREGG!\r\n",
-                    "twitter": "https://t.me/thedragonslairfarm",
-                    "telegram": "https://t.me/thedragonslairfarm",
-                    "discord": "",
-                    "website": "https://tinydragon.games/",
-                    "telegramBotChatId": null,
-                    "floor": "2",
-                    "type": "EIP721",
-                    "aiGenerated": false,
-                    "partialRoyaltySupport": false,
-                    "fullRoyaltySupport": false,
-                    "coverImage": "https://images.nftrade.com/uploads/c7465829bebfc783774ceec730d4474e1662281714010.webp",
-                    "createdAt": "2021-09-24T01:42:26.947Z",
-                    "updatedAt": "2023-03-31T19:52:32.775Z"
-                  }
-                }, {
-                  "chainId": 56,
-                  "id": "decff83f-4e78-4ab6-bbbe-bdb4b5244572",
-                  "contractId": "312fdcc3-d726-46cc-81a9-50f7e05f1631",
-                  "contractAddress": "0x67f1259a4ef294bfef09b43b33bdb938233111a2",
-                  "contractName": "BBB Wish Builders",
-                  "contractImage": null,
-                  "verified": false,
-                  "averagePriceDay": 120.89,
-                  "averagePriceWeek": 120.89,
-                  "averagePriceMonth": 120.89,
-                  "averagePriceAllTime": 83.05,
-                  "volumeDay": 120.89,
-                  "volumeWeek": 120.89,
-                  "volumeMonth": 120.89,
-                  "volumeAllTime": 747.49,
-                  "changeDay": null,
-                  "changeWeek": null,
-                  "salesDay": 1,
-                  "salesWeek": 1,
-                  "salesMonth": 1,
-                  "salesAllTime": 9,
-                  "tradersDay": 0,
-                  "tradersWeek": 0,
-                  "tradersMonth": 0,
-                  "tradersAllTime": 0,
-                  "createdAt": "2023-08-10T13:00:41.146Z",
-                  "updatedAt": "2023-08-10T13:00:41.146Z",
-                  "reportId": "3e3ca2b4-f0da-49a5-baff-2d7c81259f39",
-                  "contract": {
-                    "chainId": 56,
-                    "id": "312fdcc3-d726-46cc-81a9-50f7e05f1631",
-                    "displayName": "BBB Wish Builders",
-                    "slug": "bbb-wish-builders",
-                    "address": "0x67f1259a4ef294bfef09b43b33bdb938233111a2",
-                    "name": "BBB Wish Builders",
-                    "symbol": "BBBWB",
-                    "chainType": "evm",
-                    "verified": false,
-                    "forked": false,
-                    "trending": false,
-                    "hot": false,
-                    "ai_generated": false,
-                    "handmade": false,
-                    "error": false,
-                    "partial_royalty_support": false,
-                    "full_royalty_support": false,
-                    "exclusive": false,
-                    "featured": false,
-                    "image": null,
-                    "cover_image": null,
-                    "description": null,
-                    "twitter": null,
-                    "telegram": null,
-                    "discord": null,
-                    "website": null,
-                    "telegramBotChatId": null,
-                    "floor": "0",
-                    "type": "EIP721",
-                    "aiGenerated": false,
-                    "partialRoyaltySupport": false,
-                    "fullRoyaltySupport": false,
-                    "coverImage": null,
-                    "createdAt": "2023-06-06T17:16:53.198Z",
-                    "updatedAt": "2023-08-10T11:23:18.088Z"
-                  }
-                }, {
-                  "chainId": 56,
-                  "id": "09976651-4751-4362-9572-20716884b07f",
-                  "contractId": "17991b5a-707d-47cd-8ec1-83046b285419",
-                  "contractAddress": "0x8f647259cf276bbfcd786ce8bb34cca3e6230c01",
-                  "contractName": "Infinity Yacht Club",
-                  "contractImage": "https://images.nftrade.com/uploads/aaf4badfddaf8cc49be4048f5881298d1663589929194.webp",
-                  "verified": true,
-                  "averagePriceDay": 120.87,
-                  "averagePriceWeek": 133.75,
-                  "averagePriceMonth": 133.75,
-                  "averagePriceAllTime": 1300.92,
-                  "volumeDay": 120.87,
-                  "volumeWeek": 267.49,
-                  "volumeMonth": 267.49,
-                  "volumeAllTime": 52036.81,
-                  "changeDay": -17.56,
-                  "changeWeek": null,
-                  "salesDay": 1,
-                  "salesWeek": 2,
-                  "salesMonth": 2,
-                  "salesAllTime": 40,
-                  "tradersDay": 0,
-                  "tradersWeek": 0,
-                  "tradersMonth": 0,
-                  "tradersAllTime": 0,
-                  "createdAt": "2023-08-10T13:00:41.146Z",
-                  "updatedAt": "2023-08-10T13:00:41.146Z",
-                  "reportId": "3e3ca2b4-f0da-49a5-baff-2d7c81259f39",
-                  "contract": {
-                    "chainId": 56,
-                    "id": "17991b5a-707d-47cd-8ec1-83046b285419",
-                    "displayName": "Infinity Yacht Club",
-                    "slug": "infinity-yacht-club",
-                    "address": "0x8f647259cf276bbfcd786ce8bb34cca3e6230c01",
-                    "name": "Infinity Yacht Club",
-                    "symbol": null,
-                    "chainType": "evm",
-                    "verified": true,
-                    "forked": false,
-                    "trending": false,
-                    "hot": false,
-                    "ai_generated": false,
-                    "handmade": false,
-                    "error": false,
-                    "partial_royalty_support": false,
-                    "full_royalty_support": false,
-                    "exclusive": false,
-                    "featured": false,
-                    "image": "https://images.nftrade.com/uploads/aaf4badfddaf8cc49be4048f5881298d1663589929194.webp",
-                    "cover_image": "https://images.nftrade.com/uploads/36212cffc1ebe80333057ec74d9e540d1663589929710.webp",
-                    "description": "The ecosystem that is here to #MakeDeFiBetter",
-                    "twitter": "https://twitter.com/MDB_DeFi",
-                    "telegram": "https://t.me/mdb_defi",
-                    "discord": "https://discord.com/invite/makedefibetter",
-                    "website": "https://www.mdb.fund/",
-                    "telegramBotChatId": null,
-                    "floor": "1.99",
-                    "type": "EIP721",
-                    "aiGenerated": false,
-                    "partialRoyaltySupport": false,
-                    "fullRoyaltySupport": false,
-                    "coverImage": "https://images.nftrade.com/uploads/36212cffc1ebe80333057ec74d9e540d1663589929710.webp",
-                    "createdAt": "2022-09-14T16:02:09.958Z",
-                    "updatedAt": "2023-08-09T10:48:14.168Z"
-                  }
-                }, {
-                  "chainId": 137,
-                  "id": "fc8dafde-3f43-4a3c-bf6f-cca9d1e27ef5",
-                  "contractId": "f7b6694e-6462-4b6f-bff7-29688c29be1e",
-                  "contractAddress": "0x0f28954ba506f2a350d3b27d26fad660e2fee267",
-                  "contractName": "Reality NFT",
-                  "contractImage": "https://image.nftrade.com/uploads/0829705895cb601eb146a9fdc10f4d6b1691419149322.webp",
-                  "verified": true,
-                  "averagePriceDay": 15.07,
-                  "averagePriceWeek": 27.19,
-                  "averagePriceMonth": 53.23,
-                  "averagePriceAllTime": 52.29,
-                  "volumeDay": 30.15,
-                  "volumeWeek": 299.08,
-                  "volumeMonth": 1969.3400000000004,
-                  "volumeAllTime": 1986.88,
-                  "changeDay": null,
-                  "changeWeek": -56.66,
-                  "salesDay": 2,
-                  "salesWeek": 11,
-                  "salesMonth": 37,
-                  "salesAllTime": 38,
-                  "tradersDay": 0,
-                  "tradersWeek": 0,
-                  "tradersMonth": 0,
-                  "tradersAllTime": 0,
-                  "createdAt": "2023-08-10T13:00:41.146Z",
-                  "updatedAt": "2023-08-10T13:00:41.146Z",
-                  "reportId": "3e3ca2b4-f0da-49a5-baff-2d7c81259f39",
-                  "contract": {
-                    "chainId": 137,
-                    "id": "f7b6694e-6462-4b6f-bff7-29688c29be1e",
-                    "displayName": "Reality NFT",
-                    "slug": "reality-nft",
-                    "address": "0x0f28954ba506f2a350d3b27d26fad660e2fee267",
-                    "name": "Reality NFT",
-                    "symbol": null,
-                    "chainType": "evm",
-                    "verified": true,
-                    "forked": false,
-                    "trending": false,
-                    "hot": false,
-                    "ai_generated": false,
-                    "handmade": false,
-                    "error": false,
-                    "partial_royalty_support": false,
-                    "full_royalty_support": false,
-                    "exclusive": false,
-                    "featured": false,
-                    "image": "https://image.nftrade.com/uploads/0829705895cb601eb146a9fdc10f4d6b1691419149322.webp",
-                    "cover_image": "https://image.nftrade.com/uploads/9ee6ebb0d7428de687762711398096451691419149727.webp",
-                    "description": "Reality Metaverse NFTs revolutionize the way you make money.By simply holding our NFTs, you'll be profit sharing from mobile games and other sources. Our collection features iconic landmarks, cities, and countries as immersive 3D models.  It's a sustainable income-making model that puts you in control. Join us now and unlock your earning potential!",
-                    "twitter": "https://twitter.com/Realitymeta",
-                    "telegram": "https://t.me/RealityMeta",
-                    "discord": "https://discord.gg/reality-meta",
-                    "website": "https://realitymeta.io/",
-                    "telegramBotChatId": null,
-                    "floor": "9.8",
-                    "type": "EIP1155",
-                    "aiGenerated": false,
-                    "partialRoyaltySupport": false,
-                    "fullRoyaltySupport": false,
-                    "coverImage": "https://image.nftrade.com/uploads/9ee6ebb0d7428de687762711398096451691419149727.webp",
-                    "createdAt": "2023-04-25T20:03:46.059Z",
-                    "updatedAt": "2023-08-09T17:11:25.923Z"
-                  }
-                }, {
-                  "chainId": 43114,
-                  "id": "dd38738b-43ec-4387-9ce5-b23d8196dad1",
-                  "contractId": "15b46bc8-69ca-4091-87f4-07d38fabe28d",
-                  "contractAddress": "0x7b6121b5b97b9945ce8528f37263bc01ca0b1826",
-                  "contractName": "HatchyPocket Gen2",
-                  "contractImage": "https://image.nftrade.com/uploads/86c0dbe35d4982a6fe7d5a1ce7bd97511665066478540.webp",
-                  "verified": true,
-                  "averagePriceDay": 4.47,
-                  "averagePriceWeek": 4.47,
-                  "averagePriceMonth": 6.68,
-                  "averagePriceAllTime": 5.83,
-                  "volumeDay": 8.95,
-                  "volumeWeek": 8.95,
-                  "volumeMonth": 140.32,
-                  "volumeAllTime": 425.72,
-                  "changeDay": 0,
-                  "changeWeek": 13.58,
-                  "salesDay": 2,
-                  "salesWeek": 2,
-                  "salesMonth": 21,
-                  "salesAllTime": 73,
-                  "tradersDay": 0,
-                  "tradersWeek": 0,
-                  "tradersMonth": 0,
-                  "tradersAllTime": 0,
-                  "createdAt": "2023-08-10T13:00:41.146Z",
-                  "updatedAt": "2023-08-10T13:00:41.146Z",
-                  "reportId": "3e3ca2b4-f0da-49a5-baff-2d7c81259f39",
-                  "contract": {
-                    "chainId": 43114,
-                    "id": "15b46bc8-69ca-4091-87f4-07d38fabe28d",
-                    "displayName": "HatchyPocket Gen2",
-                    "slug": "hatchypocket-gen2",
-                    "address": "0x7b6121b5b97b9945ce8528f37263bc01ca0b1826",
-                    "name": "HatchyPocket Gen2",
-                    "symbol": null,
-                    "chainType": "evm",
-                    "verified": true,
-                    "forked": false,
-                    "trending": false,
-                    "hot": false,
-                    "ai_generated": false,
-                    "handmade": false,
-                    "error": false,
-                    "partial_royalty_support": false,
-                    "full_royalty_support": false,
-                    "exclusive": false,
-                    "featured": false,
-                    "image": "https://image.nftrade.com/uploads/86c0dbe35d4982a6fe7d5a1ce7bd97511665066478540.webp",
-                    "cover_image": "https://image.nftrade.com/uploads/bb9360e13ea01210e201061d143f64571665066478757.webp",
-                    "description": "Decentralized IP of 150+ elemental monsters owned and managed by the $HATCHY token, earned exclusively by staking Hatchy NFTs. Build the future of IP!",
-                    "twitter": "https://twitter.com/HatchyPocket",
-                    "telegram": "",
-                    "discord": "https://discord.gg/cW378HVjyY",
-                    "website": "https://hatchypocket.com/",
-                    "telegramBotChatId": null,
-                    "floor": "0.1895",
-                    "type": "EIP1155",
-                    "aiGenerated": false,
-                    "partialRoyaltySupport": false,
-                    "fullRoyaltySupport": false,
-                    "coverImage": "https://image.nftrade.com/uploads/bb9360e13ea01210e201061d143f64571665066478757.webp",
-                    "createdAt": "2022-09-23T15:05:31.794Z",
-                    "updatedAt": "2023-08-09T15:21:53.030Z"
-                  }
-                }, {
-                  "chainId": 56,
-                  "id": "50cbf3a6-ccda-4dfb-bcb2-e4fedb0bd585",
-                  "contractId": "107880da-b76a-439c-bdcc-6fa3e3afd6c3",
-                  "contractAddress": "0xc2a19349d5f451071c3085b90f531d19f190ff21",
-                  "contractName": "Playbux Early Bird Quest",
-                  "contractImage": "https://image.nftrade.com/uploads/c882582599feac4ce4de9a54bb327e431689852328827.webp",
-                  "verified": true,
-                  "averagePriceDay": 1.22,
-                  "averagePriceWeek": 1.25,
-                  "averagePriceMonth": 1.24,
-                  "averagePriceAllTime": 1.31,
-                  "volumeDay": 2.43,
-                  "volumeWeek": 6.25,
-                  "volumeMonth": 8.67,
-                  "volumeAllTime": 23.53,
-                  "changeDay": 2.53,
-                  "changeWeek": 158.26,
-                  "salesDay": 2,
-                  "salesWeek": 5,
-                  "salesMonth": 7,
-                  "salesAllTime": 18,
-                  "tradersDay": 0,
-                  "tradersWeek": 0,
-                  "tradersMonth": 0,
-                  "tradersAllTime": 0,
-                  "createdAt": "2023-08-10T13:00:41.146Z",
-                  "updatedAt": "2023-08-10T13:00:41.146Z",
-                  "reportId": "3e3ca2b4-f0da-49a5-baff-2d7c81259f39",
-                  "contract": {
-                    "chainId": 56,
-                    "id": "107880da-b76a-439c-bdcc-6fa3e3afd6c3",
-                    "displayName": "Playbux Early Bird Quest",
-                    "slug": "playbux-early-bird-quest",
-                    "address": "0xc2a19349d5f451071c3085b90f531d19f190ff21",
-                    "name": "Playbux Early Bird Quest",
-                    "symbol": null,
-                    "chainType": "evm",
-                    "verified": true,
-                    "forked": false,
-                    "trending": false,
-                    "hot": false,
-                    "ai_generated": false,
-                    "handmade": false,
-                    "error": false,
-                    "partial_royalty_support": false,
-                    "full_royalty_support": false,
-                    "exclusive": false,
-                    "featured": false,
-                    "image": "https://image.nftrade.com/uploads/c882582599feac4ce4de9a54bb327e431689852328827.webp",
-                    "cover_image": "https://image.nftrade.com/uploads/f347fe315b94b75481f5fe51e19ebbc81689852329060.webp",
-                    "description": "The very first limited NFT collection of Playbux for those who join the early birds quest in June 2022. Playbux is a metaverse on the BNB chain that integrates Shop to Earn, Virtual communities and blockchain services. Our goal is to create the Web 3.0 metaverse that is the easiest to use. Playbux is 1 of 14 teams from the fourth season of the Binance Incubator Program.",
-                    "twitter": "https://twitter.com/playbuxco",
-                    "telegram": "",
-                    "discord": "https://discord.gg/rB8aNxtvTW",
-                    "website": "https://playbux.co/",
-                    "telegramBotChatId": null,
-                    "floor": "0.005",
-                    "type": "EIP721",
-                    "aiGenerated": false,
-                    "partialRoyaltySupport": false,
-                    "fullRoyaltySupport": false,
-                    "coverImage": "https://image.nftrade.com/uploads/f347fe315b94b75481f5fe51e19ebbc81689852329060.webp",
-                    "createdAt": "2022-09-07T11:00:09.966Z",
-                    "updatedAt": "2023-07-20T11:25:29.306Z"
-                  }
-                }]
-              },
-              "trendingCollections": {
-                "reportContracts": [{
-                  "chainId": 56,
-                  "id": "5541c4ab-bc02-473a-b211-998b4900f6b1",
-                  "displayName": "Brick by Brick",
-                  "slug": "brick-by-brick",
-                  "address": "0x11fc887f8f4674ae70cd07605ea42f7dbfdda69d",
-                  "name": "Brick by Brick",
-                  "symbol": "BBBNFT",
-                  "chainType": "evm",
-                  "verified": true,
-                  "forked": false,
-                  "trending": false,
-                  "hot": false,
-                  "ai_generated": false,
-                  "handmade": false,
-                  "error": false,
-                  "partial_royalty_support": false,
-                  "full_royalty_support": false,
-                  "exclusive": false,
-                  "featured": true,
-                  "image": "https://image.nftrade.com/uploads/7c94a24ea60afded57cf0152dfdb9b531677842409779.webp",
-                  "cover_image": "https://image.nftrade.com/uploads/fed8121d68928c601e2b05e2b2946aae1677842409956.webp",
-                  "description": "Brick By Brick NFTs are revolutionizing the NFT and crypto space by offering dividends from real world assets to pay NFT holders. Visit https://www.brickbybrickcrypto.com/ for more information.",
-                  "twitter": "https://twitter.com/B_by_BCrypto",
-                  "telegram": "https://t.me/+Xz2MORc131Q0YzM0",
-                  "discord": "",
-                  "website": "https://www.brickbybrickcrypto.com/",
-                  "telegramBotChatId": null,
-                  "floor": 12.5,
-                  "type": "EIP721",
-                  "aiGenerated": false,
-                  "partialRoyaltySupport": false,
-                  "fullRoyaltySupport": false,
-                  "coverImage": "https://image.nftrade.com/uploads/fed8121d68928c601e2b05e2b2946aae1677842409956.webp",
-                  "createdAt": "2023-03-02T12:42:58.339Z",
-                  "updatedAt": "2023-08-09T21:00:09.661Z",
-                  "contractName": "Brick by Brick",
-                  "contractImage": "https://image.nftrade.com/uploads/7c94a24ea60afded57cf0152dfdb9b531677842409779.webp",
-                  "contractAddress": "0x11fc887f8f4674ae70cd07605ea42f7dbfdda69d",
-                  "volumeAllTime": 1255,
-                  "changeWeek": 95
-                }, {
-                  "chainId": 43114,
-                  "id": "ac44a2bf-29ae-43cd-906c-97f53aaa374a",
-                  "displayName": "Love Monster",
-                  "slug": "love-monster",
-                  "address": "0x07e741cf962ef140cba9b15b7e6af7f31f3ed04d",
-                  "name": "Love Monster",
-                  "symbol": null,
-                  "chainType": "evm",
-                  "verified": true,
-                  "forked": false,
-                  "trending": false,
-                  "hot": false,
-                  "ai_generated": false,
-                  "handmade": false,
-                  "error": false,
-                  "partial_royalty_support": false,
-                  "full_royalty_support": false,
-                  "exclusive": false,
-                  "featured": true,
-                  "image": "https://image.nftrade.com/uploads/c452fbd4029e725b296bb73568f1a96f1678353616052.webp",
-                  "cover_image": "https://image.nftrade.com/uploads/6799b541e9c8e0a9bd5fb52d22cdf30a1670083168077.webp",
-                  "description": "A Love Monster NFT is your gateway to our Metaverse and doubles as your in-game avatar. Unlike traditional gaming, where the game company owns all of the in-game avatars and skins, with a Love Monster, all of the hard work that goes into levelling up your avatars is now yours.",
-                  "twitter": "https://twitter.com/lovemonsternft",
-                  "telegram": "",
-                  "discord": "https://discord.gg/lovemonster",
-                  "website": "https://lovemonsternft.com/",
-                  "telegramBotChatId": null,
-                  "floor": 12.5,
-                  "type": "EIP721",
-                  "aiGenerated": false,
-                  "partialRoyaltySupport": false,
-                  "fullRoyaltySupport": false,
-                  "coverImage": "https://image.nftrade.com/uploads/6799b541e9c8e0a9bd5fb52d22cdf30a1670083168077.webp",
-                  "createdAt": "2022-12-03T12:50:12.841Z",
-                  "updatedAt": "2023-05-13T01:53:05.521Z",
-                  "contractName": "Love Monster",
-                  "contractImage": "https://image.nftrade.com/uploads/c452fbd4029e725b296bb73568f1a96f1678353616052.webp",
-                  "contractAddress": "0x07e741cf962ef140cba9b15b7e6af7f31f3ed04d",
-                  "volumeAllTime": 1255,
-                  "changeWeek": 95
-                }, {
-                  "chainId": 43114,
-                  "id": "87ba84cd-8c55-4c5d-a6f4-9943ff64f679",
-                  "displayName": "Asgardian NFTs",
-                  "slug": "asgardian-nfts",
-                  "address": "0x2265a6e1f53fc38cefb914d08b45ee22d8351a02",
-                  "name": "Asgardian NFTs",
-                  "symbol": null,
-                  "chainType": "evm",
-                  "verified": true,
-                  "forked": false,
-                  "trending": false,
-                  "hot": false,
-                  "ai_generated": false,
-                  "handmade": false,
-                  "error": false,
-                  "partial_royalty_support": false,
-                  "full_royalty_support": false,
-                  "exclusive": false,
-                  "featured": true,
-                  "image": "https://image.nftrade.com/uploads/95ef4c3d3b68a251c61d6f97c6d50a3b1672909115338.webp",
-                  "cover_image": "https://image.nftrade.com/uploads/7726dcfc6d1011f795f7572ce064a6071672909115465.webp",
-                  "description": "Gods of Asgard is a fully immersive P2E Battle-Royale game rooted in Norse mythology and powered by the Avalanche blockchain. Each NFT is your playable character providing access to the Gods of Asgard Universe. Battle, survive, and earn your way though the vast open world of Midgard.",
-                  "twitter": "https://twitter.com/GodsofAsgardP2E",
-                  "telegram": "",
-                  "discord": "https://discord.com/invite/F3B4sY5RtN",
-                  "website": "https://godsofasgardp2e.com/",
-                  "telegramBotChatId": null,
-                  "floor": 12.5,
-                  "type": "EIP721",
-                  "aiGenerated": false,
-                  "partialRoyaltySupport": false,
-                  "fullRoyaltySupport": false,
-                  "coverImage": "https://image.nftrade.com/uploads/7726dcfc6d1011f795f7572ce064a6071672909115465.webp",
-                  "createdAt": "2022-12-01T11:53:26.896Z",
-                  "updatedAt": "2023-08-03T12:29:09.335Z",
-                  "contractName": "Asgardian NFTs",
-                  "contractImage": "https://image.nftrade.com/uploads/95ef4c3d3b68a251c61d6f97c6d50a3b1672909115338.webp",
-                  "contractAddress": "0x2265a6e1f53fc38cefb914d08b45ee22d8351a02",
-                  "volumeAllTime": 1255,
-                  "changeWeek": 95
-                }, {
-                  "chainId": 56,
-                  "id": "63109dc1-0f32-40f9-bfb1-ae3acb084f0c",
-                  "displayName": "Sentinel Squadron",
-                  "slug": "sentinel-squadron",
-                  "address": "0xd689af61148cb91e286d0d4e92d67120e35c37b8",
-                  "name": "Sentinel Squadron",
-                  "symbol": null,
-                  "chainType": "evm",
-                  "verified": true,
-                  "forked": false,
-                  "trending": false,
-                  "hot": false,
-                  "ai_generated": false,
-                  "handmade": false,
-                  "error": false,
-                  "partial_royalty_support": false,
-                  "full_royalty_support": false,
-                  "exclusive": false,
-                  "featured": true,
-                  "image": "https://image.nftrade.com/uploads/72b9b6a51d5b4a2112e6dc02618ae42a1667136367914.webp",
-                  "cover_image": "https://image.nftrade.com/uploads/911d721814d74b14eb6c04ffa18a39d01667136368090.webp",
-                  "description": "The Sentinel Squadron NFTs are a high utility collection, delivering pure passive income \u0026 giving holders the ability to build lucrative positions in two of the most trusted and highly respected projects in DeFi. \r\nNFT holders will earn both ESHARE \u0026 MDB daily.",
-                  "twitter": "https://twitter.com/empmoneybsc",
-                  "telegram": "https://t.me/empmoney",
-                  "discord": "https://discord.gg/empmoney",
-                  "website": "https://emp.money/",
-                  "telegramBotChatId": null,
-                  "floor": 12.5,
-                  "type": "EIP721",
-                  "aiGenerated": false,
-                  "partialRoyaltySupport": false,
-                  "fullRoyaltySupport": false,
-                  "coverImage": "https://image.nftrade.com/uploads/911d721814d74b14eb6c04ffa18a39d01667136368090.webp",
-                  "createdAt": "2022-10-30T10:03:00.487Z",
-                  "updatedAt": "2023-08-08T23:36:53.635Z",
-                  "contractName": "Sentinel Squadron",
-                  "contractImage": "https://image.nftrade.com/uploads/72b9b6a51d5b4a2112e6dc02618ae42a1667136367914.webp",
-                  "contractAddress": "0xd689af61148cb91e286d0d4e92d67120e35c37b8",
-                  "volumeAllTime": 1255,
-                  "changeWeek": 95
-                }, {
-                  "chainId": 43114,
-                  "id": "af9e1549-d489-40ae-8125-2e4852997f13",
-                  "displayName": "Castle Crush",
-                  "slug": "castle-crush",
-                  "address": "0xa695ea0c90d89a1463a53fa7a02168bc46fbbf7e",
-                  "name": "Castle Crush",
-                  "symbol": null,
-                  "chainType": "evm",
-                  "verified": true,
-                  "forked": false,
-                  "trending": false,
-                  "hot": false,
-                  "ai_generated": false,
-                  "handmade": false,
-                  "error": false,
-                  "partial_royalty_support": false,
-                  "full_royalty_support": false,
-                  "exclusive": true,
-                  "featured": true,
-                  "image": "https://images.nftrade.com/uploads/e28f44284cab380cbff589a14c8a8a451662026220099.webp",
-                  "cover_image": "https://images.nftrade.com/uploads/3843daeba976ced73e4c095410db4ef81662026220611.webp",
-                  "description": "Castle Crush is a mobile, free-to-play, real-time strategy game developed by Wildlife Studios in partnership with Jungle Studios. Ascended and Founder Chests contain playable NFT cards which generate $ACS through gameplay.",
-                  "twitter": "https://twitter.com/playcastlecrush",
-                  "telegram": "",
-                  "discord": "https://discord.gg/castlecrush",
-                  "website": "https://castlecrushgame.com/",
-                  "telegramBotChatId": null,
-                  "floor": 12.5,
-                  "type": "EIP1155",
-                  "aiGenerated": false,
-                  "partialRoyaltySupport": false,
-                  "fullRoyaltySupport": false,
-                  "coverImage": "https://images.nftrade.com/uploads/3843daeba976ced73e4c095410db4ef81662026220611.webp",
-                  "createdAt": "2022-05-16T15:09:05.703Z",
-                  "updatedAt": "2023-08-10T12:55:15.568Z",
-                  "contractName": "Castle Crush",
-                  "contractImage": "https://images.nftrade.com/uploads/e28f44284cab380cbff589a14c8a8a451662026220099.webp",
-                  "contractAddress": "0xa695ea0c90d89a1463a53fa7a02168bc46fbbf7e",
-                  "volumeAllTime": 1255,
-                  "changeWeek": 95
-                }, {
-                  "chainId": 43114,
-                  "id": "9764efac-9c0a-4155-8d62-2434d8fcefb1",
-                  "displayName": "HC MayinHara",
-                  "slug": "hc-mayinhara",
-                  "address": "0xf7b6c94837d9fa6162eda75f0909b21ee54534bb",
-                  "name": "HC MayinHara",
-                  "symbol": null,
-                  "chainType": "evm",
-                  "verified": true,
-                  "forked": false,
-                  "trending": false,
-                  "hot": false,
-                  "ai_generated": false,
-                  "handmade": false,
-                  "error": false,
-                  "partial_royalty_support": false,
-                  "full_royalty_support": false,
-                  "exclusive": false,
-                  "featured": true,
-                  "image": "https://images.nftrade.com/uploads/8d22e6ba7df112ef3d514fcb8d030e441662293519790.webp",
-                  "cover_image": "https://images.nftrade.com/uploads/37ffee81e8caf6a0055b701acec585921662293520360.webp",
-                  "description": "The MayinHara are uniquely crafted NFT artworks and fully playable in-game characters. These immortal heroes were created by the Mayin Sandar light crystal to bring back the balance to Ventuna from the forces of evil. Playing as a MayinHara gives you celestial-like powers in the game.",
-                  "twitter": "https://twitter.com/HeroesChained",
-                  "telegram": "https://t.me/HeroesChainedOfficial",
-                  "discord": "https://discord.com/invite/heroeschained",
-                  "website": "https://heroeschained.com",
-                  "telegramBotChatId": null,
-                  "floor": 12.5,
-                  "type": "EIP721",
-                  "aiGenerated": false,
-                  "partialRoyaltySupport": false,
-                  "fullRoyaltySupport": false,
-                  "coverImage": "https://images.nftrade.com/uploads/37ffee81e8caf6a0055b701acec585921662293520360.webp",
-                  "createdAt": "2022-03-24T14:01:05.797Z",
-                  "updatedAt": "2023-08-09T03:37:08.768Z",
-                  "contractName": "HC MayinHara",
-                  "contractImage": "https://images.nftrade.com/uploads/8d22e6ba7df112ef3d514fcb8d030e441662293519790.webp",
-                  "contractAddress": "0xf7b6c94837d9fa6162eda75f0909b21ee54534bb",
-                  "volumeAllTime": 1255,
-                  "changeWeek": 95
-                }, {
-                  "chainId": 43114,
-                  "id": "24cf3816-f48c-4bd6-a427-fece363e00e5",
-                  "displayName": "Dragon Crypto Hero",
-                  "slug": "dragon-crypto-hero",
-                  "address": "0x7a420aeff902aaa2c85a190d7b91ce8beffffe14",
-                  "name": "Dragon Crypto Hero",
-                  "symbol": "DCGHERO",
-                  "chainType": "evm",
-                  "verified": true,
-                  "forked": false,
-                  "trending": false,
-                  "hot": false,
-                  "ai_generated": false,
-                  "handmade": false,
-                  "error": false,
-                  "partial_royalty_support": false,
-                  "full_royalty_support": false,
-                  "exclusive": false,
-                  "featured": true,
-                  "image": "https://images.nftrade.com/uploads/f7e036f0b37e53cd3494f979ddf6c3841662298985211.webp",
-                  "cover_image": "https://images.nftrade.com/uploads/c65c71b76bf8c842559c39768245d5001662298985702.webp",
-                  "description": "An NFT avatar is required to play The Legend of Aurum Draconis. The higher your rank, the more starting stats you get to spend. This character gains experience and levels through our mini-games and is used throughout every layer coming up. As you level up, you receive new stat points to increase your avatar's value and chances of winning.",
-                  "twitter": "https://twitter.com/DRGNCRYPTOGAMIN",
-                  "telegram": "",
-                  "discord": "https://discord.com/invite/dragoncryptogaming",
-                  "website": "https://aurumdraconis.dragoncrypto.io",
-                  "telegramBotChatId": null,
-                  "floor": 12.5,
-                  "type": "EIP721",
-                  "aiGenerated": false,
-                  "partialRoyaltySupport": false,
-                  "fullRoyaltySupport": false,
-                  "coverImage": "https://images.nftrade.com/uploads/c65c71b76bf8c842559c39768245d5001662298985702.webp",
-                  "createdAt": "2022-02-19T12:14:02.429Z",
-                  "updatedAt": "2023-07-27T13:26:39.454Z",
-                  "contractName": "Dragon Crypto Hero",
-                  "contractImage": "https://images.nftrade.com/uploads/f7e036f0b37e53cd3494f979ddf6c3841662298985211.webp",
-                  "contractAddress": "0x7a420aeff902aaa2c85a190d7b91ce8beffffe14",
-                  "volumeAllTime": 1255,
-                  "changeWeek": 95
-                }, {
-                  "chainId": 43114,
-                  "id": "45b1ca69-e160-460c-8f7b-73df6b60ad92",
-                  "displayName": "Tiny Bones - by BonesBet.io",
-                  "slug": "tiny-bones-by-bonesbetio",
-                  "address": "0x4a8e6a9b93e55af71882f3afaa10141715ce5fd2",
-                  "name": "Tiny Bones - by BonesBet.io",
-                  "symbol": null,
-                  "chainType": "evm",
-                  "verified": true,
-                  "forked": false,
-                  "trending": false,
-                  "hot": false,
-                  "ai_generated": false,
-                  "handmade": false,
-                  "error": false,
-                  "partial_royalty_support": false,
-                  "full_royalty_support": false,
-                  "exclusive": false,
-                  "featured": true,
-                  "image": "https://image.nftrade.com/uploads/4180232b8e292c11ce8a3aa4f72d656f1673339014159.webp",
-                  "cover_image": "https://images.nftrade.com/uploads/100b6efca599d34963100c169a2a057a1662295971616.webp",
-                  "description": "BonesBet is a transparent and social web3 casino on Avalanche blockchain. Offering a gambling social experience, XP, tracking, leaderboards, cash prizes and special NFTs in a web browser 3D world. Tiny Bones NFT were minted by early supporters.",
-                  "twitter": "https://twitter.com/BonesBet_io",
-                  "telegram": "",
-                  "discord": "https://discord.gg/zwwuXucMtQ",
-                  "website": "http://www.bonesbet.io/",
-                  "telegramBotChatId": null,
-                  "floor": 12.5,
-                  "type": "EIP721",
-                  "aiGenerated": false,
-                  "partialRoyaltySupport": false,
-                  "fullRoyaltySupport": false,
-                  "coverImage": "https://images.nftrade.com/uploads/100b6efca599d34963100c169a2a057a1662295971616.webp",
-                  "createdAt": "2021-10-10T16:30:44.012Z",
-                  "updatedAt": "2023-06-22T21:34:19.754Z",
-                  "contractName": "Tiny Bones - by BonesBet.io",
-                  "contractImage": "https://image.nftrade.com/uploads/4180232b8e292c11ce8a3aa4f72d656f1673339014159.webp",
-                  "contractAddress": "0x4a8e6a9b93e55af71882f3afaa10141715ce5fd2",
-                  "volumeAllTime": 1255,
-                  "changeWeek": 95
-                }]
-              },
-              "tokens": [{
-                "chainId": 1,
-                "id": "0f8c745a-0c83-4b52-853f-5a3196e1e3f4",
-                "contractName": "MutantApeYachtClub",
-                "contractAddress": "0x60e4d786628fea6478f785a6d7e704777c86a7c6",
-                "tokenID": "25722",
-                "tokenURI": "https://boredapeyachtclub.com/api/mutants/25722",
-                "name": "MutantApeYachtClub #25722",
-                "image": "http://ipfs/ipfs/QmSx9w8R9MiEEUyb52GwfxsPFwaY7LETPar1vdissqyjmb",
-                "external_url": null,
-                "thumb": "https://images.nftrade.com/evm_1_0x60e4d786628fea6478f785a6d7e704777c86a7c6_25722/thumb.webp",
-                "mintTime": "1630211097",
-                "price": null,
-                "last_sell": null,
-                "last_sell_at": null,
-                "highest_offer": null,
-                "preview": "https://images.nftrade.com/evm_1_0x60e4d786628fea6478f785a6d7e704777c86a7c6_25722/preview.png",
-                "type": "image",
-                "chainType": "evm",
-                "blacklist": false,
-                "status": "FETCHED",
-                "listedAt": null,
-                "reportsCount": 0,
-                "updatedAt": "2023-06-13T09:40:02.591Z",
-                "externalOrderPrice": null,
-                "externalOrderListedAt": null,
-                "externalOrderId": null,
-                "orderId": null,
-                "minPrice": null,
-                "minListedAt": null,
-                "imageChecksum": "d56ba502-5ef6-1d0f-52b0-51921904ee94",
-                "imagePathHash": "22e4759f-7c6f-0b08-4d24-51da289514eb",
-                "externalURL": null,
-                "lastSell": null,
-                "lastSellAt": null,
-                "highestOffer": null,
-                "createdAt": "2022-08-16T21:36:01.181Z",
-                "contractId": "a75d2f0c-a2d9-448a-85f1-08f48fec7d39",
-                "contract": {
-                  "verified": true,
-                  "displayName": "MutantApeYachtClub",
-                  "slug": "mutantapeyachtclub",
-                  "address": "0x60e4d786628fea6478f785a6d7e704777c86a7c6"
-                }
-              }, {
-                "chainId": 56,
-                "id": "21aca3a1-23cb-4f5c-9e85-d749ce2068e5",
-                "contractName": "FRONTERA",
-                "contractAddress": "0xa9e9a78ff1027dc0dd1ee54d7f134f191541fe07",
-                "tokenID": "2132",
-                "tokenURI": "https://ipfs.frontera.games/metadata/sc-v1/2132",
-                "name": "ARCH-4NG3L #2132",
-                "image": "https://ipfs.frontera.games/assets/GIF/EPIC/ARCH-4NG3L-a.gif",
-                "external_url": "",
-                "thumb": "https://images.nftrade.com/evm_56_0xa9e9a78ff1027dc0dd1ee54d7f134f191541fe07_178/1661443765963/thumb.webp",
-                "mintTime": "1642689834",
-                "price": null,
-                "last_sell": "8",
-                "last_sell_at": "2022-08-16T15:28:56.000Z",
-                "highest_offer": "0.3",
-                "preview": "https://images.nftrade.com/evm_56_0xa9e9a78ff1027dc0dd1ee54d7f134f191541fe07_178/1661443765963/preview.webp",
-                "type": "image",
-                "chainType": "evm",
-                "blacklist": false,
-                "status": "FETCHED",
-                "listedAt": null,
-                "reportsCount": 0,
-                "updatedAt": "2023-03-27T17:56:00.617Z",
-                "externalOrderPrice": null,
-                "externalOrderListedAt": null,
-                "externalOrderId": null,
-                "orderId": null,
-                "minPrice": null,
-                "minListedAt": null,
-                "imageChecksum": "3229de20-4d3d-4399-e1a4-a1e1dc5ce2da",
-                "imagePathHash": "e79752c3-27bc-528f-ce2d-02644095802b",
-                "externalURL": "",
-                "lastSell": "8",
-                "lastSellAt": "2022-08-16T15:28:56.000Z",
-                "highestOffer": "0.3",
-                "createdAt": "2022-02-09T05:28:39.752Z",
-                "contractId": "5321abd2-a47b-4dcf-992a-47258d3dffc7",
-                "contract": {
-                  "verified": true,
-                  "displayName": "FRONTERA",
-                  "slug": "frontera",
-                  "address": "0xa9e9a78ff1027dc0dd1ee54d7f134f191541fe07"
-                }
-              }, {
-                "chainId": 43114,
-                "id": "3e4cede8-c90f-4dde-a5da-da4176848da3",
-                "contractName": "Party Animals",
-                "contractAddress": "0x880fe52c6bc4ffffb92d6c03858c97807a900691",
-                "tokenID": "10010",
-                "tokenURI": "https://partyanimals.xyz/id/10010",
-                "name": "Party Animals #10010",
-                "image": "https://ipfs.io/ipfs/QmUY6Gr2J58yifLWfXFXZPketBP4KeQDq9LHgwrsTEbbDe/event1.png",
-                "external_url": "",
-                "thumb": "https://images.nftrade.com/evm_43114_0x880fe52c6bc4ffffb92d6c03858c97807a900691_10036/1662538459667/thumb.webp",
-                "mintTime": "1637767733",
-                "price": null,
-                "last_sell": "500",
-                "last_sell_at": "2021-11-25T03:42:11.000Z",
-                "highest_offer": "3.3",
-                "preview": "https://images.nftrade.com/evm_43114_0x880fe52c6bc4ffffb92d6c03858c97807a900691_10036/1662538459667/preview.png",
-                "type": "image",
-                "chainType": "evm",
-                "blacklist": false,
-                "status": "FETCHED",
-                "listedAt": null,
-                "reportsCount": 0,
-                "updatedAt": "2023-07-24T19:12:42.822Z",
-                "externalOrderPrice": null,
-                "externalOrderListedAt": null,
-                "externalOrderId": null,
-                "orderId": null,
-                "minPrice": null,
-                "minListedAt": null,
-                "imageChecksum": "44a5d296-c231-b72e-8096-209df9ec282c",
-                "imagePathHash": "5c7eb6dc-f2e9-b745-dfdc-5d5a0b4b5ddb",
-                "externalURL": "",
-                "lastSell": "500",
-                "lastSellAt": "2021-11-25T03:42:11.000Z",
-                "highestOffer": "3.3",
-                "createdAt": "2021-11-24T17:14:23.737Z",
-                "contractId": "627111a7-2a9f-41fa-9b3e-b3ee43e019ca",
-                "contract": {
-                  "verified": true,
-                  "displayName": "Party Animals",
-                  "slug": "party-animals",
-                  "address": "0x880fe52c6bc4ffffb92d6c03858c97807a900691"
-                }
-              }, {
-                "chainId": 1,
-                "id": "68cfd515-88f2-4355-bf70-28695f4bfabb",
-                "contractName": "BoredApeYachtClub",
-                "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
-                "tokenID": "5495",
-                "tokenURI": "https://nftstorage.link/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/5495",
-                "name": "BoredApeYachtClub #5495",
-                "image": "https://dweb.link/ipfs/QmbCzdVPMu4tLdr4MbPQET7bFGDnqoGh6SbxHNej1Fdrw7",
-                "external_url": null,
-                "thumb": "https://images.nftrade.com/evm_1_0x12811428f07fda14efee22ffbb7a1b635a8177dd_5495/thumb.webp",
-                "mintTime": "1619855421",
-                "price": null,
-                "last_sell": null,
-                "last_sell_at": null,
-                "highest_offer": null,
-                "preview": "https://images.nftrade.com/evm_1_0x12811428f07fda14efee22ffbb7a1b635a8177dd_5495/preview.png",
-                "type": "image",
-                "chainType": "evm",
-                "blacklist": false,
-                "status": "FETCHED",
-                "listedAt": null,
-                "reportsCount": 0,
-                "updatedAt": "2023-03-28T08:11:40.047Z",
-                "externalOrderPrice": null,
-                "externalOrderListedAt": null,
-                "externalOrderId": null,
-                "orderId": null,
-                "minPrice": null,
-                "minListedAt": null,
-                "imageChecksum": "d4211a27-620b-04a3-1c50-e899b405db50",
-                "imagePathHash": "6e52161b-0100-dff6-6203-965af3bf3e64",
-                "externalURL": null,
-                "lastSell": null,
-                "lastSellAt": null,
-                "highestOffer": null,
-                "createdAt": "2021-05-17T05:22:31.220Z",
-                "contractId": "5f23041e-f3f2-40c5-959a-0a80dc519a64",
-                "contract": {
-                  "verified": true,
-                  "displayName": "BoredApeYachtClub",
-                  "slug": "boredapeyachtclub",
-                  "address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
-                }
-              }, {
-                "chainId": 43114,
-                "id": "6e72819e-2641-4cfd-8eb0-50d91b34bae8",
-                "contractName": "chikn",
-                "contractAddress": "0x8927985b358692815e18f2138964679dca5d3b79",
-                "tokenID": "211",
-                "tokenURI": "https://api.chikn.farm/api/chikn/metadata/211",
-                "name": "chikn #211",
-                "image": "https://chikn-farm.sfo3.cdn.digitaloceanspaces.com/chikn/image/1d8bfc88803c6e94119e46508e739565bee06912.jpeg",
-                "external_url": "",
-                "thumb": "https://images.nftrade.com/evm_43114_0x8927985b358692815e18f2138964679dca5d3b79_211/1662409391745/thumb.webp",
-                "mintTime": "1636581776",
-                "price": null,
-                "last_sell": "123.45",
-                "last_sell_at": "2022-09-04T17:58:48.000Z",
-                "highest_offer": "91",
-                "preview": "https://images.nftrade.com/evm_43114_0x8927985b358692815e18f2138964679dca5d3b79_211/1662409391745/preview.jpg",
-                "type": "image",
-                "chainType": "evm",
-                "blacklist": false,
-                "status": "FETCHED",
-                "listedAt": null,
-                "reportsCount": 0,
-                "updatedAt": "2023-03-28T07:21:47.380Z",
-                "externalOrderPrice": null,
-                "externalOrderListedAt": null,
-                "externalOrderId": null,
-                "orderId": null,
-                "minPrice": null,
-                "minListedAt": null,
-                "imageChecksum": "1e9a3305-89a3-6f90-1fa0-8f55f73d288f",
-                "imagePathHash": "58679780-4403-9943-ef40-d123f7008137",
-                "externalURL": "",
-                "lastSell": "123.45",
-                "lastSellAt": "2022-09-04T17:58:48.000Z",
-                "highestOffer": "91",
-                "createdAt": "2022-01-03T17:29:56.868Z",
-                "contractId": "3ea26942-608a-48e4-b99d-74a4e4a573d1",
-                "contract": {
-                  "verified": true,
-                  "displayName": "chikn",
-                  "slug": "chikn",
-                  "address": "0x8927985b358692815e18f2138964679dca5d3b79"
-                }
-              }, {
-                "chainId": 1,
-                "id": "a40539a3-ea1d-4076-a508-92ac39114ba6",
-                "contractName": "Doodles",
-                "contractAddress": "0x8a90cab2b38dba80c64b7734e58ee1db38b8992e",
-                "tokenID": "3439",
-                "tokenURI": "https://nftstorage.link/ipfs/QmPMc4tcBsMqLRuCQtPmPe84bpSjrC3Ky7t3JWuHXYB4aS/3439",
-                "name": "Doodle #3439",
-                "image": "https://dweb.link/ipfs/QmQPpmEQFXvXKNe9Y1q7zMkChoyiN2cVjmz8HJpRzGQBWB",
-                "external_url": "",
-                "thumb": "https://images.nftrade.com/evm_1_0x8a90cab2b38dba80c64b7734e58ee1db38b8992e_3439/1663331117282/thumb.webp",
-                "mintTime": "1634479188",
-                "price": null,
-                "last_sell": null,
-                "last_sell_at": null,
-                "highest_offer": null,
-                "preview": "https://images.nftrade.com/evm_1_0x8a90cab2b38dba80c64b7734e58ee1db38b8992e_3439/1663331117282/preview.png",
-                "type": "image",
-                "chainType": "evm",
-                "blacklist": false,
-                "status": "FETCHED",
-                "listedAt": null,
-                "reportsCount": 0,
-                "updatedAt": "2023-07-03T21:13:01.873Z",
-                "externalOrderPrice": null,
-                "externalOrderListedAt": null,
-                "externalOrderId": null,
-                "orderId": null,
-                "minPrice": null,
-                "minListedAt": null,
-                "imageChecksum": "c71180f4-c075-116a-751f-661826bec821",
-                "imagePathHash": "63194565-1cc9-f18d-54b6-395d290e5bf5",
-                "externalURL": "",
-                "lastSell": null,
-                "lastSellAt": null,
-                "highestOffer": null,
-                "createdAt": "2021-10-19T00:22:44.435Z",
-                "contractId": "4c583e8a-3e05-42ce-a0c7-153ea0c7d9bc",
-                "contract": {
-                  "verified": true,
-                  "displayName": "Doodles",
-                  "slug": "doodles",
-                  "address": "0x8a90cab2b38dba80c64b7734e58ee1db38b8992e"
-                }
-              }, {
-                "chainId": 1,
-                "id": "c0fd6b71-1e07-44ed-9057-354ae4d95119",
-                "contractName": "Highrise Creature Club",
-                "contractAddress": "0xb0e827c9ab5e68d243f707f832b756981987f704",
-                "tokenID": "340282366920938463463374607431768219620",
-                "tokenURI": "https://highrise-creature-club.s3.amazonaws.com/metadata/340282366920938463463374607431768219620",
-                "name": "Highrise Creature #8164",
-                "image": "https://cdn-production.joinhighrise.com/hccimgs/8164.png",
-                "external_url": null,
-                "thumb": "https://image.nftrade.com/immutablex_1_0xb0e827c9ab5e68d243f707f832b756981987f704_340282366920938463463374607431768219620/thumb.webp",
-                "mintTime": "1638277140",
-                "price": null,
-                "last_sell": null,
-                "last_sell_at": null,
-                "highest_offer": null,
-                "preview": "https://image.nftrade.com/immutablex_1_0xb0e827c9ab5e68d243f707f832b756981987f704_340282366920938463463374607431768219620/preview.png",
-                "type": "image",
-                "chainType": "immutablex",
-                "blacklist": false,
-                "status": "FETCHED",
-                "listedAt": null,
-                "reportsCount": 0,
-                "updatedAt": "2023-03-26T14:44:19.061Z",
-                "externalOrderPrice": null,
-                "externalOrderListedAt": null,
-                "externalOrderId": null,
-                "orderId": null,
-                "minPrice": null,
-                "minListedAt": null,
-                "imageChecksum": "50c71b86-dab2-ad1b-4fa6-85471a9895a6",
-                "imagePathHash": "02f59223-51c9-435b-b742-a1a07ac85ee9",
-                "externalURL": null,
-                "lastSell": null,
-                "lastSellAt": null,
-                "highestOffer": null,
-                "createdAt": "2022-10-24T11:06:12.035Z",
-                "contractId": "8c1ed99e-c06b-4d14-9176-ca78330dde9a",
-                "contract": {
-                  "verified": true,
-                  "displayName": "Highrise Creature Club",
-                  "slug": "highrise-creature-club",
-                  "address": "0xb0e827c9ab5e68d243f707f832b756981987f704"
-                }
-              }, {
-                "chainId": 1,
-                "id": "c56e6643-ba91-4b2d-b420-a4c95f0c0bd7",
-                "contractName": "Azuki",
-                "contractAddress": "0xed5af388653567af2f388e6224dc7c4b3241c544",
-                "tokenID": "3394",
-                "tokenURI": "https://nftstorage.link/ipfs/QmZcH4YvBVVRJtdn4RdbaqgspFU8gH6P9vomDpBVpAL3u4/3394",
-                "name": "Azuki #3394",
-                "image": "https://gateway.ipfs.io/ipfs/QmYDvPAXtiJg7s8JdRBSLWdgSphQdac8j1YuQNNxcGE1hg/3394.png",
-                "external_url": null,
-                "thumb": "https://images.nftrade.com/evm_1_0xed5af388653567af2f388e6224dc7c4b3241c544_3394/thumb.webp",
-                "mintTime": "1642010473",
-                "price": null,
-                "last_sell": null,
-                "last_sell_at": null,
-                "highest_offer": null,
-                "preview": "https://images.nftrade.com/evm_1_0xed5af388653567af2f388e6224dc7c4b3241c544_3394/preview.png",
-                "type": "image",
-                "chainType": "evm",
-                "blacklist": false,
-                "status": "FETCHED",
-                "listedAt": null,
-                "reportsCount": 0,
-                "updatedAt": "2023-03-27T09:03:23.325Z",
-                "externalOrderPrice": null,
-                "externalOrderListedAt": null,
-                "externalOrderId": null,
-                "orderId": null,
-                "minPrice": null,
-                "minListedAt": null,
-                "imageChecksum": "a981faef-d2bd-4239-3d93-7c92786b248c",
-                "imagePathHash": "493899d7-4b57-cfdc-a049-1574a027b8f5",
-                "externalURL": null,
-                "lastSell": null,
-                "lastSellAt": null,
-                "highestOffer": null,
-                "createdAt": "2022-09-11T01:43:43.653Z",
-                "contractId": "633792ca-2e9a-400f-bef7-369df2928f5b",
-                "contract": {
-                  "verified": true,
-                  "displayName": "Azuki",
-                  "slug": "azuki",
-                  "address": "0xed5af388653567af2f388e6224dc7c4b3241c544"
-                }
-              }, {
-                "chainId": 1284,
-                "id": "c86ca8c1-ebd7-4b1e-9391-edde5bf53965",
-                "contractName": "MOONPETS",
-                "contractAddress": "0x2159762693c629c5a44fc9bafd484f8b96713467",
-                "tokenID": "1115",
-                "tokenURI": "https://moonpets.mypinata.cloud/ipfs/QmV56th23uMSxyWRveeriW8ScjnnbPRwQy2XvpumcqX8Qb/1115.json",
-                "name": "Moonpets #1115",
-                "image": "https://gateway.ipfs.io/ipfs/QmcKAgo1eTSn15nq5btcFsdTnENsnvPDSdf5ic6XfpT6ZU/1115.png",
-                "external_url": null,
-                "thumb": "https://image.nftrade.com/evm_1284_0x2159762693c629c5a44fc9bafd484f8b96713467_1115/1669449353562/thumb.webp",
-                "mintTime": "1655060484",
-                "price": null,
-                "last_sell": "12",
-                "last_sell_at": "2022-06-14T18:21:30.000Z",
-                "highest_offer": null,
-                "preview": "https://image.nftrade.com/evm_1284_0x2159762693c629c5a44fc9bafd484f8b96713467_1115/1669449353562/preview.png",
-                "type": "image",
-                "chainType": "evm",
-                "blacklist": false,
-                "status": "FETCHED",
-                "listedAt": null,
-                "reportsCount": 0,
-                "updatedAt": "2023-07-22T14:31:48.568Z",
-                "externalOrderPrice": null,
-                "externalOrderListedAt": null,
-                "externalOrderId": null,
-                "orderId": null,
-                "minPrice": null,
-                "minListedAt": null,
-                "imageChecksum": "d470e32a-5959-220f-296c-0d9786559fd2",
-                "imagePathHash": "6640dc38-7686-eb25-dffe-0231a385304e",
-                "externalURL": null,
-                "lastSell": "12",
-                "lastSellAt": "2022-06-14T18:21:30.000Z",
-                "highestOffer": null,
-                "createdAt": "2022-06-12T19:02:05.148Z",
-                "contractId": "caded663-56bb-499a-8e22-712334f3aa70",
-                "contract": {
-                  "verified": true,
-                  "displayName": "MOONPETS-v3",
-                  "slug": "moonpets-v3",
-                  "address": "0x2159762693c629c5a44fc9bafd484f8b96713467"
-                }
-              }, {
-                "chainId": 1,
-                "id": "cec5e36a-071f-4cbd-9279-9b3d495bc7ef",
-                "contractName": "PudgyPenguins",
-                "contractAddress": "0xbd3531da5cf5857e7cfaa92426877b022e612cf8",
-                "tokenID": "4054",
-                "tokenURI": "https://ipfs.io/ipfs/QmWXJXRdExse2YHRY21Wvh4pjRxNRQcWVhcKw4DLVnqGqs/4054",
-                "name": "PudgyPenguins #4054",
-                "image": "https://ipfs.io/ipfs/QmNf1UsmdGaMbpatQ6toXSkzDpizaGmC9zfunCyoz1enD5/penguin/4054.png",
-                "external_url": null,
-                "thumb": "https://images.nftrade.com/evm_1_0xbd3531da5cf5857e7cfaa92426877b022e612cf8_4054/thumb.webp",
-                "mintTime": "1626984558",
-                "price": null,
-                "last_sell": null,
-                "last_sell_at": null,
-                "highest_offer": null,
-                "preview": "https://images.nftrade.com/evm_1_0xbd3531da5cf5857e7cfaa92426877b022e612cf8_4054/preview.webp",
-                "type": "image",
-                "chainType": "evm",
-                "blacklist": false,
-                "status": "FETCHED",
-                "listedAt": null,
-                "reportsCount": 0,
-                "updatedAt": "2023-07-02T08:19:36.582Z",
-                "externalOrderPrice": null,
-                "externalOrderListedAt": null,
-                "externalOrderId": null,
-                "orderId": null,
-                "minPrice": null,
-                "minListedAt": null,
-                "imageChecksum": "c5c402a8-92bb-992f-31e7-a1e7a29bf187",
-                "imagePathHash": "9aad9624-5079-d641-221d-1ef78344fb5d",
-                "externalURL": null,
-                "lastSell": null,
-                "lastSellAt": null,
-                "highestOffer": null,
-                "createdAt": "2022-08-21T23:56:05.602Z",
-                "contractId": "07c1e7fb-fb3c-41b6-b59e-2021f84c96d3",
-                "contract": {
-                  "verified": true,
-                  "displayName": "PudgyPenguins",
-                  "slug": "pudgypenguins",
-                  "address": "0xbd3531da5cf5857e7cfaa92426877b022e612cf8"
-                }
-              }]
-            },
-            "context": {}
-          },
-          "__N_SSP": true
-        },
-        "page": "/",
-        "query": {},
-        "buildId": "Gm4oIijGifSX7wC1d2LrF",
-        "assetPrefix": "https://cdn.nftrade.com/2023-07-06-b0ec5239",
-        "isFallback": false,
-        "gssp": true
-      }
-    </script>
 <script nomodule="" src="https://cdn.nftrade.com/2023-07-06-b0ec5239/_next/static/chunks/polyfills-7c3fbef897d7c8dfaeb1.js"></script>
 <script src="https://cdn.nftrade.com/2023-07-06-b0ec5239/_next/static/chunks/main-7c76004ca4a4ef6c9a19.js" async=""></script>
 <script src="https://cdn.nftrade.com/2023-07-06-b0ec5239/_next/static/chunks/webpack-4f0e6c8aa58f6775a182.js" async=""></script>
