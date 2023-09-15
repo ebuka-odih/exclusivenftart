@@ -7,7 +7,7 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>Investment | NFTPrimearts</title>
+    <title>Dashboard | {{ env('APP_NAME') }}</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('assets2/css/dashlite.css?ver=2.4.0') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('assets2/css/theme.css?ver=2.4.0') }}">
@@ -54,16 +54,16 @@
                     </div>
                     <div class="nk-header-brand">
                         <a href="{{ route('user.dashboard') }}" class="logo-link">
-                            <h4 class="text-white">NFTPremiumarts</h4>
-                            <span class="nio-version">Invest</span>
+                            <h4 class="text-white">{{ env('APP_NAME') }}</h4>
+                            <span class="nio-version">NFT</span>
                         </a>
                     </div><!-- .nk-header-brand -->
                     <div style="background-color: #15202f" class="nk-header-menu " data-content="headerNav">
                         <div class="nk-header-mobile">
                             <div class="nk-header-brand">
                                 <a href="{{ route('user.dashboard') }}" class="logo-link">
-                                    <h4 class="text-white">NFTPremiumarts</h4>
-                                    <span class="nio-version">Invest</span>
+                                    <h4 class="text-white">{{ env('APP_NAME') }}</h4>
+                                    <span class="nio-version">NFT</span>
                                 </a>
                             </div>
                             <div class="nk-menu-trigger mr-n2">

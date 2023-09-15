@@ -26,9 +26,8 @@
             <div class="nk-sidebar-element nk-sidebar-head">
                 <div class="nk-sidebar-brand">
                     <a href="{{ route('user.dashboard') }}" class="logo-link nk-sidebar-logo">
-{{--                        <h3>Artchainelite</h3>--}}
-                        <img width="150" height="80" src="{{ asset('img/logo3.png') }}" alt="">
-{{--                        <span class="nio-version">Crypto</span>--}}
+                        <h3 style="color: black; font-weight: bolder">{{ env('APP_NAME') }}</h3>
+{{--                        <img width="150" height="80" src="{{ asset('img/logo3.png') }}" alt="">--}}
                     </a>
                 </div>
                 <div class="nk-menu-trigger mr-n2">
