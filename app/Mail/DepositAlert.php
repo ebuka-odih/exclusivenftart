@@ -33,4 +33,5 @@ class DepositAlert extends Mailable
             ->subject(env('APP_ NAME'))
             ->from(env('MAIL_FROM_ADDRESS', env('APP_NAME')));
     }
+
 }

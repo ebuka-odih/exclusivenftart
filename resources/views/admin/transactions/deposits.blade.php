@@ -61,7 +61,7 @@
 
                                                     <tr>
                                                         <td class="text-center">
-                                                            {{ $item->user->name }}<br>
+                                                            {{ optional($item->user)->name }}<br>
                                                             (@convert($item->user['balance']))
                                                         </td>
                                                         <td class="fw-semibold">
